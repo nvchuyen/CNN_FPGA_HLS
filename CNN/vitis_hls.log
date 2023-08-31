@@ -1,0 +1,538 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'CMC' on host 'desktop-qvhj8po' (Windows NT_amd64 version 6.2) on Wed Jun 16 15:53:19 +0700 2021
+INFO: [HLS 200-10] In directory 'F:/NVChuyen/CNN/VitisHLS/CNN'
+Sourcing Tcl script 'F:/NVChuyen/CNN/VitisHLS/CNN/cnn/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project cnn 
+INFO: [HLS 200-10] Opening project 'F:/NVChuyen/CNN/VitisHLS/CNN/cnn'.
+INFO: [HLS 200-1510] Running: set_top cnn 
+INFO: [HLS 200-1510] Running: add_files Convolution.h 
+INFO: [HLS 200-10] Adding design file 'Convolution.h' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/activations.h 
+INFO: [HLS 200-10] Adding design file 'headers1/activations.h' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/buffer.h 
+INFO: [HLS 200-10] Adding design file 'headers1/buffer.h' to the project
+INFO: [HLS 200-1510] Running: add_files cnn.cpp 
+INFO: [HLS 200-10] Adding design file 'cnn.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/defines.h 
+INFO: [HLS 200-10] Adding design file 'headers1/defines.h' to the project
+INFO: [HLS 200-1510] Running: add_files fully.h 
+INFO: [HLS 200-10] Adding design file 'fully.h' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/input.h 
+INFO: [HLS 200-10] Adding design file 'headers1/input.h' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/output.h 
+INFO: [HLS 200-10] Adding design file 'headers1/output.h' to the project
+INFO: [HLS 200-1510] Running: add_files pooling.h 
+INFO: [HLS 200-10] Adding design file 'pooling.h' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/weights.h 
+INFO: [HLS 200-10] Adding design file 'headers1/weights.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb cnn_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'cnn_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'F:/NVChuyen/CNN/VitisHLS/CNN/cnn/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/cnn_conv/cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 20 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/cnn_conv/cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name cnn cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.237 seconds; current allocated memory: 971.348 MB.
+INFO: [HLS 200-10] Analyzing design file 'cnn.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:598:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:699:9
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:87
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:44
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:85
+WARNING: [HLS 207-5301] unused parameter 'src': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:31
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:85
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:44
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:85
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:78
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:89
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:87
+WARNING: [HLS 207-5301] unused parameter 'sqsum': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:319:54
+WARNING: [HLS 207-5301] unused parameter 'cast': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:278:27
+WARNING: [HLS 207-1017] unknown pragma ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:1157:9
+WARNING: [HLS 207-5301] unused parameter 'flags': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:163:39
+WARNING: [HLS 207-5301] unused parameter 'x': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:435:24
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_haar.h:192:43
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 2 seconds. Elapsed time: 38.636 seconds; current allocated memory: 196.791 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:81:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:82:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:135:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:133:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:117:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:123:13)
+INFO: [HLS 214-131] Inlining function 'hls::LineBuffer<112, 1, float, 0>::LineBuffer()' into 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./pooling.h:23:40)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./pooling.h:54:8)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./pooling.h:49:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./pooling.h:41:12)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./pooling.h:32:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [10], float*)' (./fully.h:26:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'fc_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [10], float*)' (./fully.h:35:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream(char const*)' into 'cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (cnn.cpp:22:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream(char const*)' into 'cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (cnn.cpp:23:25)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::stream(char const*)' into 'cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (cnn.cpp:24:25)
+INFO: [HLS 214-210] Disaggregating variable 'conv_buff'
+INFO: [HLS 214-210] Disaggregating variable 'pool_buff'
+INFO: [HLS 214-178] Inlining function 'buffer<100>::buffer()' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:70:0)
+INFO: [HLS 214-178] Inlining function 'buffer<100>::InsertBack(float)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:70:0)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' (./Convolution.h:70:0)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'fc_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [10], float*)' (./fully.h:14:0)
+INFO: [HLS 214-178] Inlining function 'pool_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' into 'cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (cnn.cpp:16:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (./Convolution.h:111:15)
+WARNING: [HLS 214-167] The program may have out of bound array access (./Convolution.h:117:23)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:20:13)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:29:15)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:29:12)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:29:12)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:35:15)
+WARNING: [HLS 214-167] The program may have out of bound array access (./fully.h:35:27)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 5.793 seconds; current allocated memory: 197.756 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 197.757 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label8' (./Convolution.h:106) in function 'conv_layer1(hls::stream<float, 0>&, hls::stream<float, 0>&)' completely with a factor of 1.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.356 seconds; current allocated memory: 202.584 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'buffer<100>::GetValue' into 'conv_layer1' (./Convolution.h:110) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.227 seconds; current allocated memory: 202.200 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_51_1' (./headers1/buffer.h:51) in function 'conv_layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_76_1' (./headers1/buffer.h:75) in function 'conv_layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'fc_layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_19_1' (./fully.h:20) in function 'fc_layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer1_label3' (./fully.h:35) in function 'fc_layer1' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'pool_layer1_label4' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'pool_layer1_label6' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'pool_layer1_label9' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'cnn' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'fc_layer1_label0' (./fully.h:24) in function 'fc_layer1' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_layer1_label9' (./Convolution.h:93) in function 'conv_layer1' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'fc_layer1_label1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:145) in function 'fc_layer1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'fc_layer1_label2' (./fully.h:29) in function 'fc_layer1' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label2' (./Convolution.h:97) in function 'conv_layer1' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label6' in function 'conv_layer1' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label7' in function 'conv_layer1' completely with a factor of 4.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'conv_layer1' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_76_1' (./headers1/buffer.h:75) in function 'conv_layer1' completely with a factor of 99.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label0' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'conv_layer1' completely with a factor of 4.
+INFO: [XFORM 203-102] Partitioning array 'fc_layer1_weights' in dimension 2 automatically.
+WARNING: [HLS 200-914] Completely partitioning array 'conv_buff.array' (./Convolution.h:75) accessed through non-constant indices on dimension 1 (./headers1/buffer.h:77:3), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'conv_buff.array' (./Convolution.h:75) in dimension 1 completely.
+WARNING: [HLS 200-914] Completely partitioning array 'pool_buff.val' (./pooling.h:23) accessed through non-constant indices on dimension 1, which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'pool_buff.val' (./pooling.h:23) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'buffer<100>::GetValue' into 'conv_layer1' (./Convolution.h:110) automatically.
+WARNING: [HLS 200-805] An internal stream 'conv1_out' (cnn.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'pool1_out' (cnn.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) to (./pooling.h:37:36) in function 'cnn'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 4.181 seconds; current allocated memory: 232.170 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'conv_init_buffer' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:0) in function 'conv_layer1' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_layer1_label_stride' in function 'conv_layer1'.
+INFO: [XFORM 203-541] Flattening a loop nest 'pool_layer1_label3' (./pooling.h:20:18) in function 'cnn'.
+INFO: [XFORM 203-541] Flattening a loop nest 'pool_layer1_label2' (./pooling.h:20:9) in function 'cnn'.
+WARNING: [HLS 200-960] Cannot flatten loop 'pool_layer1_label1' (./pooling.h:20:15) in function 'cnn' more than one sub loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'pool_layer1_label0' (./pooling.h:20:6) in function 'cnn'.
+INFO: [XFORM 203-541] Flattening a loop nest 'pool_layer1_label8' (./pooling.h:21:30) in function 'cnn'.
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[47]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[0]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[3]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[17]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[18]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[32]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[34]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[35]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[4]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[36]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[7]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[40]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[22]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[2]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[10]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[11]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[15]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[20]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[19]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[24]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[33]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[13]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[39]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[46]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[48]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[27]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[14]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[30]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[5]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[21]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[9]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[23]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[37]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[41]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[42]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[43]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[1]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[6]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[16]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[25]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[8]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[26]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[31]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[38]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[44]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[45]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[28]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[12]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[29]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[92]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[76]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[94]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[69]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[62]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[96]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[97]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[52]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[59]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[90]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[98]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[70]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[84]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[95]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[57]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[87]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[99]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[100]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[101]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[102]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[51]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[63]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[58]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[103]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[86]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[50]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[54]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[60]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[71]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[61]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[79]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[67]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[80]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[89]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[65]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[68]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[73]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[72]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[64]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[74]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[77]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[81]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[49]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[55]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[75]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[82]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[66]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[78]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[85]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[56]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[83]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[88]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[91]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[93]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[53]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[107]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[110]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[105]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[106]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[111]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[104]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[108]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'pool_buff.val[109]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[47]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[0]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[3]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[17]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[18]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[32]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[34]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[35]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[4]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[36]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[7]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[40]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[22]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[2]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[10]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[11]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[15]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[20]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[19]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[24]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[33]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[13]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[39]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[46]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[48]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[27]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[14]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[30]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[5]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[21]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[9]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[23]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[37]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[41]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[42]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[43]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[1]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[6]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[16]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[25]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[8]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[26]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[31]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[38]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[44]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[45]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[28]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[12]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[29]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[92]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[76]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[94]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[69]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[62]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[96]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[97]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[52]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[59]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[90]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[98]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[70]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[84]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[95]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[57]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[87]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[99]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[100]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[101]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[102]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[51]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[63]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[58]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[103]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[86]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[50]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[54]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[60]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[71]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[61]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[79]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[67]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[80]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[89]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[65]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[68]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[73]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[72]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[64]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[74]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[77]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[81]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[49]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[55]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[75]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[82]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[66]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[78]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[85]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[56]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[83]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[88]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[91]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[93]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[53]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[107]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[110]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[105]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[106]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[111]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[104]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[108]' (./pooling.h:23).
+WARNING: [ANALYSIS 214-52] Found false intra dependency for variable 'pool_buff.val[109]' (./pooling.h:23).
+INFO: [HLS 200-472] Inferring partial write operation for 'output' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (./fully.h:20:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (./fully.h:29:12)
+INFO: [HLS 200-472] Inferring partial write operation for 'pool_buff.val[0]' (./pooling.h:37:36)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 4.076 seconds; current allocated memory: 283.100 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_51_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_51_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_76_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_76_1'
+INFO: [SCHED 204-61] Pipelining loop 'conv_layer1_label_stride_conv_layer1_label9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 32, Final II = 32, Depth = 45, loop 'conv_layer1_label_stride_conv_layer1_label9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.461 seconds; current allocated memory: 300.981 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 3.038 seconds; current allocated memory: 315.786 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fc_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer1_label0'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 44, Depth = 44, loop 'fc_layer1_label0'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer1_label3'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 4, loop 'fc_layer1_label3'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 3.745 seconds; current allocated memory: 317.253 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.838 seconds; current allocated memory: 318.781 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'pool_layer1_label2_pool_layer1_label3_pool_layer1_label4'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'pool_layer1_label2_pool_layer1_label3_pool_layer1_label4'
+INFO: [SCHED 204-61] Pipelining loop 'pool_layer1_label6'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'pool_layer1_label6'
+INFO: [SCHED 204-61] Pipelining loop 'pool_layer1_label8_pool_layer1_label9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'pool_layer1_label8_pool_layer1_label9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.791 seconds; current allocated memory: 320.968 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.353 seconds; current allocated memory: 323.904 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_layer1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.106 seconds; current allocated memory: 342.324 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fc_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fc_layer1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 5.769 seconds; current allocated memory: 378.248 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/in_stream_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'cnn/out_stream_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_2_full_dsp_1': 5 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_1_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_2_max_dsp_1': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mux_1127_32_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.037 seconds; current allocated memory: 389.848 MB.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_0_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_1_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_2_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_3_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_4_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_5_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_6_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_7_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_8_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_weights_9_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'cnn_fc_layer1_fc_layer1_bias_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_fc_layer1_output_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-278] Implementing memory 'cnn_pool_buff_val_0_ram (RAM)' using auto RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'conv1_out_U(cnn_fifo_w32_d2_S)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'pool1_out_U(cnn_fifo_w32_d2_S)' using Shift Registers.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 8.888 seconds; current allocated memory: 406.387 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 69.72 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 42 seconds. CPU system time: 4 seconds. Elapsed time: 88.997 seconds; current allocated memory: 406.713 MB.
+INFO: [HLS 200-112] Total CPU user time: 44 seconds. Total CPU system time: 6 seconds. Total elapsed time: 96.219 seconds; peak allocated memory: 971.348 MB.

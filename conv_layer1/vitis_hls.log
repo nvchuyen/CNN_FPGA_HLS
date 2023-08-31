@@ -1,0 +1,159 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Admin' on host 'desktop-1h41fin' (Windows NT_amd64 version 6.2) on Thu Sep 09 11:38:46 +0700 2021
+INFO: [HLS 200-10] In directory 'E:/CMC/CNN/VitisHLS/conv_layer1'
+Sourcing Tcl script 'E:/CMC/CNN/VitisHLS/conv_layer1/conv_layer1/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: open_project conv_layer1 
+INFO: [HLS 200-10] Opening project 'E:/CMC/CNN/VitisHLS/conv_layer1/conv_layer1'.
+INFO: [HLS 200-1510] Running: set_top conv_layer1 
+INFO: [HLS 200-1510] Running: add_files conv_layer1.cpp 
+INFO: [HLS 200-10] Adding design file 'conv_layer1.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files Convolution.h 
+INFO: [HLS 200-10] Adding design file 'Convolution.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb conv_layer1_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'conv_layer1_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'E:/CMC/CNN/VitisHLS/conv_layer1/conv_layer1/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=E:/CMC/CNN/Vivado/Ipcore/conv_layer1.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output E:/CMC/CNN/Vivado/Ipcore/conv_layer1.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name conv_layer1 conv_layer1 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.182 seconds; current allocated memory: 971.142 MB.
+INFO: [HLS 200-10] Analyzing design file 'conv_layer1.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 25.751 seconds; current allocated memory: 194.077 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::read()' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:156:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:37:10)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:38:21)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:85:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:83:13)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:69:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read()' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:77:24)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::empty() const' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:75:13)
+INFO: [HLS 214-210] Disaggregating variable 'conv_buff'
+INFO: [HLS 214-178] Inlining function 'buffer<117>::buffer()' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:19:0)
+INFO: [HLS 214-178] Inlining function 'buffer<117>::InsertBack(float)' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:19:0)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' (./Convolution.h:19:0)
+WARNING: [HLS 214-167] The program may have out of bound array access (./Convolution.h:64:15)
+WARNING: [HLS 214-167] The program may have out of bound array access (./Convolution.h:69:23)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 4.43 seconds; current allocated memory: 195.373 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.105 seconds; current allocated memory: 195.374 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label8' (./Convolution.h:63) in function 'convolution(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [1][5][5], float*)' completely with a factor of 1.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.154 seconds; current allocated memory: 196.876 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'buffer<117>::GetValue' into 'convolution' (./Convolution.h:63) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 196.241 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_52_1' (./headers1/buffer.h:52) in function 'convolution' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_77_1' (./headers1/buffer.h:76) in function 'convolution' automatically.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'conv_layer1_label9' (./Convolution.h:47) in function 'convolution' for pipelining.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label2' (./Convolution.h:51) in function 'convolution' completely with a factor of 16.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label6' in function 'convolution' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label7' in function 'convolution' completely with a factor of 5.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label1' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:136) in function 'convolution' completely with a factor of 1.
+INFO: [HLS 200-489] Unrolling loop 'VITIS_LOOP_77_1' (./headers1/buffer.h:76) in function 'convolution' completely with a factor of 116.
+INFO: [HLS 200-489] Unrolling loop 'conv_layer1_label0' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:136) in function 'convolution' completely with a factor of 5.
+WARNING: [HLS 200-914] Completely partitioning array 'conv_buff.array' (./Convolution.h:30) accessed through non-constant indices on dimension 1 (./headers1/buffer.h:78:3), which may result in long runtime and suboptimal QoR due to large multiplexers. Please consider wrapping the array access into a function or using a register file core instead.
+Resolution: For help on HLS 200-914 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-914.html
+INFO: [XFORM 203-101] Partitioning array 'conv_buff.array' (./Convolution.h:30) in dimension 1 completely.
+INFO: [XFORM 203-602] Inlining function 'buffer<117>::GetValue' into 'convolution' (./Convolution.h:63) automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 18 seconds. CPU system time: 0 seconds. Elapsed time: 17.905 seconds; current allocated memory: 228.939 MB.
+WARNING: [HLS 200-960] Cannot flatten loop 'conv_init_buffer' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:136:17) in function 'convolution' the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+Resolution: For help on HLS 200-960 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-960.html
+INFO: [XFORM 203-541] Flattening a loop nest 'conv_layer1_label_stride' in function 'convolution'.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 1.712 seconds; current allocated memory: 262.558 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'conv_layer1' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'convolution' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_52_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'VITIS_LOOP_52_1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_77_1'.
+WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_77_1'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('conv_buff_array_115_121_write_ln78', ./headers1/buffer.h:78) of variable 'conv_buff.array[0]', ./headers1/buffer.h:78 on local variable 'conv_buff.array[115]' and 'load' operation ('conv_buff_array_115_121_load', ./headers1/buffer.h:78) on local variable 'conv_buff.array[115]'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-880.html
+WARNING: [HLS 200-880] The II Violation in module 'convolution' (loop 'VITIS_LOOP_77_1'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('conv_buff_array_115_121_write_ln78', ./headers1/buffer.h:78) of variable 'conv_buff.array[0]', ./headers1/buffer.h:78 on local variable 'conv_buff.array[115]' and 'load' operation ('conv_buff_array_115_121_load', ./headers1/buffer.h:78) on local variable 'conv_buff.array[115]'.
+Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-880.html
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 3, Depth = 4, loop 'VITIS_LOOP_77_1'
+INFO: [SCHED 204-61] Pipelining loop 'conv_layer1_label_stride_conv_layer1_label9'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 32, Final II = 32, Depth = 139, loop 'conv_layer1_label_stride_conv_layer1_label9'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 9 seconds. CPU system time: 0 seconds. Elapsed time: 9.363 seconds; current allocated memory: 286.652 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 8 seconds. CPU system time: 0 seconds. Elapsed time: 7.885 seconds; current allocated memory: 322.273 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'conv_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 5 seconds. CPU system time: 0 seconds. Elapsed time: 5.812 seconds; current allocated memory: 322.562 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.52 seconds; current allocated memory: 322.615 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'convolution' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-104] Estimated max fanout for 'convolution' is 7463 from HDL expression: (1'b1 == ap_CS_fsm_state3)
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 13 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 13 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'convolution'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.444 seconds; current allocated memory: 339.394 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'conv_layer1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_layer1/in_stream_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'conv_layer1/out_stream_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'conv_layer1' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'conv_layer1'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 9 seconds. CPU system time: 1 seconds. Elapsed time: 10.742 seconds; current allocated memory: 395.081 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 4.426 seconds; current allocated memory: 401.812 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for conv_layer1.
+INFO: [VLOG 209-307] Generating Verilog RTL for conv_layer1.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 129.79 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 60 seconds. CPU system time: 2 seconds. Elapsed time: 91.895 seconds; current allocated memory: 401.945 MB.
+INFO: [HLS 200-112] Total CPU user time: 64 seconds. Total CPU system time: 4 seconds. Total elapsed time: 96.632 seconds; peak allocated memory: 971.142 MB.

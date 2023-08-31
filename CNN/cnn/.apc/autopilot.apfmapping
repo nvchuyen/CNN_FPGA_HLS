@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="weights.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\weights.h"/>
+    <originFiles name="pooling.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\pooling.h"/>
+    <originFiles name="output.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\output.h"/>
+    <originFiles name="input.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\input.h"/>
+    <originFiles name="fully.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\fully.h"/>
+    <originFiles name="defines.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\defines.h"/>
+    <originFiles name="cnn.cpp" path="F:\NVChuyen\CNN\VitisHLS\CNN\cnn.cpp"/>
+    <originFiles name="buffer.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\buffer.h"/>
+    <originFiles name="activations.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\headers1\activations.h"/>
+    <originFiles name="Convolution.h" path="F:\NVChuyen\CNN\VitisHLS\CNN\Convolution.h"/>
+  </source>
+  <testbench>
+    <originFiles name="cnn_test.cpp" path="F:\NVChuyen\CNN\VitisHLS\CNN\cnn_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

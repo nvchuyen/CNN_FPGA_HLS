@@ -1,0 +1,6 @@
+fully2_cnn_mul_25s_32s_56_1_1
+fully2_cnn_fc_layer2_weights_V
+fully2_cnn_output_V
+fully2_cnn_regslice_both
+fully2_cnn_regslice_both
+fully2_cnn

@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1628153654814">
+  <ports id="1" name="a" type="PortType" originalName="a" coreId="1" bitwidth="32">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="11" name="ap_return" direction="DirOut">
+    <dataInputObjs>ret</dataInputObjs>
+  </ports>
+  <edges id="16" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="17" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.1"/>
+  <edges id="22" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.2"/>
+  <edges id="23" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="26" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="29" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="30" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="31" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges source_obj="//@blocks.0/@node_objs.6" sink_obj="//@ports.1"/>
+  <blocks id="13" name="sigmoid" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="a_read" lineNumber="22" originalName="a" fileName="sigmoid.cpp" fileDirectory=".." coreId="0" contextFuncName="sigmoid" bitwidth="32" opcode="read" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="22" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>a</dataInputObjs>
+      <dataOutputObjs>fmul</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="mul" lineNumber="24" fileName="sigmoid.cpp" fileDirectory=".." rtlName="fmul_32ns_32ns_32_3_max_dsp_1_U2" coreName="FMul_maxdsp" implIndex="maxdsp" control="auto" opType="fmul" coreId="30" contextFuncName="sigmoid" bitwidth="32" opcode="fmul" nodeLatency="2" m_display="0" m_delay="7.01" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="24" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>fexp</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="tmp" lineNumber="24" fileName="sigmoid.cpp" fileDirectory=".." rtlName="fexp_32ns_32ns_32_8_full_dsp_1_U4" coreName="FExp_fulldsp" implIndex="fulldsp" control="auto" opType="fexp" coreId="23" contextFuncName="sigmoid" bitwidth="32" opcode="fexp" nodeLabel="3.0" nodeLatency="7" m_display="0" m_delay="4.91" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="24" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>fmul</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="exp2a" lineNumber="24" originalName="exp2a" fileName="sigmoid.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="fadd" coreId="18" contextFuncName="sigmoid" bitwidth="32" opcode="fadd" nodeLabel="11.0" nodeLatency="3" m_display="0" m_delay="6.43" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="24" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>fexp</dataInputObjs>
+      <dataOutputObjs>fadd</dataOutputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="sub" lineNumber="25" fileName="sigmoid.cpp" fileDirectory=".." rtlName="fadd_32ns_32ns_32_4_full_dsp_1_U1" coreName="FAddSub_fulldsp" implIndex="fulldsp" control="auto" opType="fadd" coreId="18" contextFuncName="sigmoid" bitwidth="32" opcode="fadd" nodeLabel="15.0" nodeLatency="3" m_display="0" m_delay="6.43" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="25" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>fdiv</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="11" name="div" lineNumber="25" fileName="sigmoid.cpp" fileDirectory=".." rtlName="fdiv_32ns_32ns_32_9_no_dsp_1_U3" coreName="FDiv" implIndex="fabric" control="auto" opType="fdiv" coreId="20" contextFuncName="sigmoid" bitwidth="32" opcode="fdiv" nodeLabel="19.0" nodeLatency="8" m_display="0" m_delay="7.05" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="25" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataInputObjs>fadd</dataInputObjs>
+      <dataOutputObjs>ret</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="12" name="_ln25" lineNumber="25" fileName="sigmoid.cpp" fileDirectory=".." coreId="2760685712" contextFuncName="sigmoid" opcode="ret" nodeLabel="27.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="sigmoid.cpp" linenumber="25" fileDirectory="F:\NVChuyen\CNN\VitisHLS\sigmoid" functionName="sigmoid"/>
+      <dataInputObjs>fdiv</dataInputObjs>
+      <dataOutputObjs>ap_return</dataOutputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="sigmoid.cpp">
+      <validLinenumbers>22</validLinenumbers>
+      <validLinenumbers>24</validLinenumbers>
+      <validLinenumbers>25</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <ScheduleInfo time="7"/>
+  <ScheduleInfo time="8"/>
+  <ScheduleInfo time="9"/>
+  <ScheduleInfo time="10"/>
+  <ScheduleInfo time="11"/>
+  <ScheduleInfo time="12"/>
+  <ScheduleInfo time="13"/>
+  <ScheduleInfo time="14"/>
+  <ScheduleInfo time="15"/>
+  <ScheduleInfo time="16"/>
+  <ScheduleInfo time="17"/>
+  <ScheduleInfo time="18"/>
+  <ScheduleInfo time="19"/>
+  <ScheduleInfo time="20"/>
+  <ScheduleInfo time="21"/>
+  <ScheduleInfo time="22"/>
+  <ScheduleInfo time="23"/>
+  <ScheduleInfo time="24"/>
+  <ScheduleInfo time="25"/>
+  <ScheduleInfo time="26"/>
+  <ScheduleInfo time="27"/>
+  <regnodes realName="mul_reg_60">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <regnodes realName="exp2a_reg_70">
+    <nodeIds>9</nodeIds>
+  </regnodes>
+  <regnodes realName="tmp_reg_65">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="sub_reg_76">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="a_read_reg_55">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <moduleNodes realName="grp_fu_46">
+    <nodeIds>11</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_50">
+    <nodeIds>8</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_40">
+    <nodeIds>7</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_fu_34">
+    <nodeIds>9</nodeIds>
+    <nodeIds>10</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="a_read_read_fu_28">
+    <nodeIds>6</nodeIds>
+  </ioNodes>
+  <ioPorts name="a">
+    <contents name="read">
+      <nodeIds>6</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="ap_return">
+    <contents name="ret">
+      <nodeIds>12</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="3" latency="3"/>
+    </states>
+    <states id="2">
+      <operations id="7" stage="2" latency="3"/>
+    </states>
+    <states id="3">
+      <operations id="7" stage="1" latency="3"/>
+    </states>
+    <states id="4">
+      <operations id="8" stage="8" latency="8"/>
+    </states>
+    <states id="5">
+      <operations id="8" stage="7" latency="8"/>
+    </states>
+    <states id="6">
+      <operations id="8" stage="6" latency="8"/>
+    </states>
+    <states id="7">
+      <operations id="8" stage="5" latency="8"/>
+    </states>
+    <states id="8">
+      <operations id="8" stage="4" latency="8"/>
+    </states>
+    <states id="9">
+      <operations id="8" stage="3" latency="8"/>
+    </states>
+    <states id="10">
+      <operations id="8" stage="2" latency="8"/>
+    </states>
+    <states id="11">
+      <operations id="8" stage="1" latency="8"/>
+    </states>
+    <states id="12">
+      <operations id="9" stage="4" latency="4"/>
+    </states>
+    <states id="13">
+      <operations id="9" stage="3" latency="4"/>
+    </states>
+    <states id="14">
+      <operations id="9" stage="2" latency="4"/>
+    </states>
+    <states id="15">
+      <operations id="9" stage="1" latency="4"/>
+    </states>
+    <states id="16">
+      <operations id="10" stage="4" latency="4"/>
+    </states>
+    <states id="17">
+      <operations id="10" stage="3" latency="4"/>
+    </states>
+    <states id="18">
+      <operations id="10" stage="2" latency="4"/>
+    </states>
+    <states id="19">
+      <operations id="10" stage="1" latency="4"/>
+    </states>
+    <states id="20">
+      <operations id="11" stage="9" latency="9"/>
+    </states>
+    <states id="21">
+      <operations id="11" stage="8" latency="9"/>
+    </states>
+    <states id="22">
+      <operations id="11" stage="7" latency="9"/>
+    </states>
+    <states id="23">
+      <operations id="11" stage="6" latency="9"/>
+    </states>
+    <states id="24">
+      <operations id="11" stage="5" latency="9"/>
+    </states>
+    <states id="25">
+      <operations id="11" stage="4" latency="9"/>
+    </states>
+    <states id="26">
+      <operations id="11" stage="3" latency="9"/>
+    </states>
+    <states id="27">
+      <operations id="11" stage="2" latency="9"/>
+    </states>
+    <states id="28">
+      <operations id="2" stage="1" latency="1"/>
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="9"/>
+      <operations id="12" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="7" outState="8">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="8" outState="9">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="9" outState="10">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="10" outState="11">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="11" outState="12">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="12" outState="13">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="13" outState="14">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="14" outState="15">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="15" outState="16">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="16" outState="17">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="17" outState="18">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="18" outState="19">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="19" outState="20">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="20" outState="21">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="21" outState="22">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="22" outState="23">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="23" outState="24">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="24" outState="25">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="25" outState="26">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="26" outState="27">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="27" outState="28">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="sigmoid" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="27" mMaxLatency="27">
+      <basicBlocks>13</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

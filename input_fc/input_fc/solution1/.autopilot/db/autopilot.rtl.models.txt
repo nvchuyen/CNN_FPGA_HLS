@@ -1,0 +1,3 @@
+input_fc_fully_input
+input_fc_regslice_both
+input_fc

@@ -1,0 +1,3 @@
+input_cnn_image_input
+input_cnn_regslice_both
+input_cnn

@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "test_array",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "test_array"
+              }]
+          }
+        },
+        {
+          "functionName": "test_array",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "test_array"
+              }]
+          }
+        }
+      ]
+    }]}

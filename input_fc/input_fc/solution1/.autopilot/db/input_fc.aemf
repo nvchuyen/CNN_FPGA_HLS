@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1623654068293">
+  <ports id="1" name="out_V" type="PortType" originalName="out" coreId="1769617536" bitwidth="32" direction="DirOut">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="27" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="28" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="29" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0" is_back_edge="1"/>
+  <edges id="32" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="33" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="36" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="39" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="40" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="41" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="42" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="43" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="46" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="47" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="48" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="51" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@ports.0"/>
+  <edges id="52" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="53" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="127" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="128" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="129" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="130" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <blocks id="9" name="block_9" type="BlockType">
+    <controlOutputObjs>phi</controlOutputObjs>
+    <controlOutputObjs>block_16</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="br_ln249" lineNumber="249" fileName="input_fc.cpp" fileDirectory=".." coreId="82" contextFuncName="input_hardcode" opcode="br" m_display="0" m_delay="0.42" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+      <controlInputObjs>block_16</controlInputObjs>
+    </node_objs>
+    <fileValidLineNumbers fileName="input_fc.cpp">
+      <validLinenumbers>249</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <blocks id="26" name="_ZL14input_hardcodeRN3hls6streamIfLi0EEE.exit" type="BlockType">
+    <controlInputObjs>block_16</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="25" name="_ln262" lineNumber="262" fileName="input_fc.cpp" fileDirectory=".." coreId="858550624" contextFuncName="input_fc" opcode="ret" nodeLabel="4.0" m_display="0" m_topoIndex="12" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="input_fc.cpp" linenumber="262" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_fc"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="input_fc.cpp">
+      <validLinenumbers>262</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" id="84" pipe_depth="3" RegionName="VITIS_LOOP_249_1">
+    <basic_blocks id="16" name="block_16" type="BlockType">
+      <controlInputObjs>block_9</controlInputObjs>
+      <controlInputObjs>.split</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>_ZL14input_hardcodeRN3hls6streamIfLi0EEE.exit</controlOutputObjs>
+      <controlOutputObjs>.split</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="i" lineNumber="249" originalName="i" fileName="input_fc.cpp" fileDirectory=".." coreId="0" contextFuncName="input_hardcode" bitwidth="11" opcode="phi" nodeLabel="1.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>zext</dataOutputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>block_9</controlInputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="add_ln249" lineNumber="249" fileName="input_fc.cpp" fileDirectory=".." rtlName="add_ln249_fu_79_p2" coreName="Adder" implIndex="fabric" control="auto" opType="add" coreId="1" contextFuncName="input_hardcode" bitwidth="11" opcode="add" nodeLabel="1.0" m_display="0" m_delay="0.79" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>phi</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="13" name="icmp_ln249" lineNumber="249" fileName="input_fc.cpp" fileDirectory=".." rtlName="icmp_ln249_fu_85_p2" opType="icmp" coreId="4294967295" contextFuncName="input_hardcode" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="0.94" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="15" name="br_ln249" lineNumber="249" fileName="input_fc.cpp" fileDirectory=".." coreId="4294967295" contextFuncName="input_hardcode" opcode="br" nodeLabel="1.0" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>.split</controlInputObjs>
+        <controlInputObjs>_ZL14input_hardcodeRN3hls6streamIfLi0EEE.exit</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="input_fc.cpp">
+        <validLinenumbers>249</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="24" name=".split" type="BlockType">
+      <controlInputObjs>block_16</controlInputObjs>
+      <controlOutputObjs>phi</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>block_16</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="17" name="i_cast" lineNumber="249" fileName="input_fc.cpp" fileDirectory=".." rtlName="i_cast_fu_91_p1" coreId="0" contextFuncName="input_hardcode" bitwidth="64" opcode="zext" nodeLabel="1.0" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="249" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>phi</dataInputObjs>
+        <dataOutputObjs>getelementptr</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="19" name="fully_input_addr" lineNumber="251" originalName="wdata" fileName="input_fc.cpp" fileDirectory=".." coreId="0" contextFuncName="input_hardcode" bitwidth="11" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="input_fc.cpp" linenumber="251" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="input_hardcode"/>
+        <dataInputObjs>zext</dataInputObjs>
+        <dataOutputObjs>load</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="fully_input_load" lineNumber="174" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="ROM" implIndex="auto" control="auto" opType="rom" coreId="101" contextFuncName="write" bitwidth="32" opcode="load" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="1.23" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="write"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>bitcast</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="bitcast_ln174" lineNumber="174" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." rtlName="out_V_TDATA_int_regslice" coreId="0" contextFuncName="write" bitwidth="32" opcode="bitcast" nodeLabel="2.0" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="write"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="22" name="out_V_write_ln174" lineNumber="174" fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="axis" implIndex="axi4stream" control="auto" opType="adapter" coreId="123" contextFuncName="write" opcode="write" nodeLabel="2.0" nodeLatency="1" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="F:\NVChuyen\CNN\VitisHLS\input_fc" functionName="write"/>
+        <dataInputObjs>bitcast</dataInputObjs>
+        <dataOutputObjs>out_V</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="br_ln0" coreId="0" opcode="br" nodeLabel="3.0" m_display="0" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <controlInputObjs>block_16</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="input_fc.cpp">
+        <validLinenumbers>249</validLinenumbers>
+        <validLinenumbers>251</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <regnodes realName="i_reg_68">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln249_reg_106">
+    <nodeIds>13</nodeIds>
+  </regnodes>
+  <regnodes realName="fully_input_addr_reg_110">
+    <nodeIds>19</nodeIds>
+  </regnodes>
+  <regnodes realName="bitcast_ln174_reg_115">
+    <nodeIds>21</nodeIds>
+  </regnodes>
+  <regnodes realName="add_ln249_reg_101">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <expressionNodes realName="i_phi_fu_72">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln249_fu_79">
+    <nodeIds>11</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="i_cast_fu_91">
+    <nodeIds>17</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln249_fu_85">
+    <nodeIds>13</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="fully_input_addr_gep_fu_55">
+    <nodeIds>19</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="bitcast_ln174_fu_96">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="grp_write_fu_48">
+    <nodeIds>22</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="fully_input">
+    <nodeIds>20</nodeIds>
+  </memoryPorts>
+  <ioPorts name="out_V">
+    <contents name="write">
+      <nodeIds>22</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="20" stage="1" latency="2"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="2" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="2"/>
+      <operations id="23" stage="1" latency="1"/>
+    </states>
+    <states id="5">
+      <operations id="25" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="input_fc" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="1571" mMaxLatency="1571">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>9</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="VITIS_LOOP_249_1" mII="1" mDepth="3" mMinTripCount="1568" mMaxTripCount="1568" mMinLatency="1569" mMaxLatency="1569" mType="1">
+      <basicBlocks>16</basicBlocks>
+      <basicBlocks>24</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>26</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

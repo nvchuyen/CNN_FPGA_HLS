@@ -1,0 +1,25 @@
+
+
+================================================================
+== Synthesis Summary Report of 'input_fc'
+================================================================
++ General Information: 
+    * Date:           Mon Jun 14 14:01:08 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        input_fc
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+----------+-----+
+    |       Modules       | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |         |    |          |          |     |
+    |       & Loops       | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|    FF    |    LUT   | URAM|
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+----------+-----+
+    |+ input_fc           |     -|  -6.06|     1571|  1.571e+04|         -|     1572|     -|        no|  4 (~0%)|   -|  19 (~0%)|  97 (~0%)|    -|
+    | o VITIS_LOOP_249_1  |     -|  -7.30|     1569|  1.569e+04|         3|        1|  1568|       yes|        -|   -|         -|         -|    -|
+    +---------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+----------+----------+-----+
+

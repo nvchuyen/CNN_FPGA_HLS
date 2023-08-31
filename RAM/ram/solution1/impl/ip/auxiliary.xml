@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="ram" xd:componentRef="ram" xd:initiationInterval="790" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="in_str" xd:originalName="in_str" xd:direction="in" xd:interfaceRef="in_str_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out_str" xd:originalName="out_str" xd:direction="out" xd:interfaceRef="out_str_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(enable)" xd:originalName="enable" xd:direction="out" xd:interfaceRef="enable" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="0"/>
+  <xd:latencyEstimates xd:best-case="786" xd:worst-case="789" xd:average-case="788"/>
+  <xd:resourceEstimates xd:LUT="2118" xd:FF="312" xd:BRAM="2" xd:DSP="0"/>
+</xd:acceleratorMap>

@@ -1,0 +1,355 @@
+
+
+================================================================
+== Vitis HLS Report for 'sigmoid'
+================================================================
+* Date:           Thu Aug  5 15:54:14 2021
+
+* Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+* Project:        sigmoid
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.057 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   28|   28|     none|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 28
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.01>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%a_read = read i32 @_ssdm_op_Read.ap_auto.float, i32 %a" [sigmoid.cpp:22]   --->   Operation 29 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [3/3] (7.01ns)   --->   "%mul = fmul i32 %a_read, i32 2" [sigmoid.cpp:24]   --->   Operation 30 'fmul' 'mul' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 7.01>
+ST_2 : Operation 31 [2/3] (7.01ns)   --->   "%mul = fmul i32 %a_read, i32 2" [sigmoid.cpp:24]   --->   Operation 31 'fmul' 'mul' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 7.01>
+ST_3 : Operation 32 [1/3] (7.01ns)   --->   "%mul = fmul i32 %a_read, i32 2" [sigmoid.cpp:24]   --->   Operation 32 'fmul' 'mul' <Predicate = true> <Delay = 7.01> <CoreInst = "FMul_maxdsp">   --->   Core 30 'FMul_maxdsp' <Latency = 2> <II = 1> <Delay = 7.01> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 4.91>
+ST_4 : Operation 33 [8/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 33 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 4.91>
+ST_5 : Operation 34 [7/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 34 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 4.91>
+ST_6 : Operation 35 [6/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 35 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 4.91>
+ST_7 : Operation 36 [5/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 36 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 4.91>
+ST_8 : Operation 37 [4/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 37 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 4.91>
+ST_9 : Operation 38 [3/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 38 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 4.91>
+ST_10 : Operation 39 [2/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 39 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 4.91>
+ST_11 : Operation 40 [1/8] (4.91ns)   --->   "%tmp = fexp i32 @llvm.exp.f32, i32 %mul" [sigmoid.cpp:24]   --->   Operation 40 'fexp' 'tmp' <Predicate = true> <Delay = 4.91> <CoreInst = "FExp_fulldsp">   --->   Core 23 'FExp_fulldsp' <Latency = 7> <II = 1> <Delay = 4.91> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 6.43>
+ST_12 : Operation 41 [4/4] (6.43ns)   --->   "%exp2a = fadd i32 %tmp, i32 1" [sigmoid.cpp:24]   --->   Operation 41 'fadd' 'exp2a' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 6.43>
+ST_13 : Operation 42 [3/4] (6.43ns)   --->   "%exp2a = fadd i32 %tmp, i32 1" [sigmoid.cpp:24]   --->   Operation 42 'fadd' 'exp2a' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 6.43>
+ST_14 : Operation 43 [2/4] (6.43ns)   --->   "%exp2a = fadd i32 %tmp, i32 1" [sigmoid.cpp:24]   --->   Operation 43 'fadd' 'exp2a' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 6.43>
+ST_15 : Operation 44 [1/4] (6.43ns)   --->   "%exp2a = fadd i32 %tmp, i32 1" [sigmoid.cpp:24]   --->   Operation 44 'fadd' 'exp2a' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 6.43>
+ST_16 : Operation 45 [4/4] (6.43ns)   --->   "%sub = fadd i32 %exp2a, i32 -2" [sigmoid.cpp:25]   --->   Operation 45 'fadd' 'sub' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 6.43>
+ST_17 : Operation 46 [3/4] (6.43ns)   --->   "%sub = fadd i32 %exp2a, i32 -2" [sigmoid.cpp:25]   --->   Operation 46 'fadd' 'sub' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 6.43>
+ST_18 : Operation 47 [2/4] (6.43ns)   --->   "%sub = fadd i32 %exp2a, i32 -2" [sigmoid.cpp:25]   --->   Operation 47 'fadd' 'sub' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 6.43>
+ST_19 : Operation 48 [1/4] (6.43ns)   --->   "%sub = fadd i32 %exp2a, i32 -2" [sigmoid.cpp:25]   --->   Operation 48 'fadd' 'sub' <Predicate = true> <Delay = 6.43> <CoreInst = "FAddSub_fulldsp">   --->   Core 18 'FAddSub_fulldsp' <Latency = 3> <II = 1> <Delay = 6.43> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 7.05>
+ST_20 : Operation 49 [9/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 49 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 7.05>
+ST_21 : Operation 50 [8/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 50 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 7.05>
+ST_22 : Operation 51 [7/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 51 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 7.05>
+ST_23 : Operation 52 [6/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 52 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 7.05>
+ST_24 : Operation 53 [5/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 53 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 7.05>
+ST_25 : Operation 54 [4/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 54 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 7.05>
+ST_26 : Operation 55 [3/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 55 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 7.05>
+ST_27 : Operation 56 [2/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 56 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 7.05>
+ST_28 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 0"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 58 [1/1] (0.00ns)   --->   "%spectopmodule_ln0 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_1"   --->   Operation 58 'spectopmodule' 'spectopmodule_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 59 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i32 %a"   --->   Operation 59 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_28 : Operation 61 [1/9] (7.05ns)   --->   "%div = fdiv i32 %sub, i32 %exp2a" [sigmoid.cpp:25]   --->   Operation 61 'fdiv' 'div' <Predicate = true> <Delay = 7.05> <CoreInst = "FDiv">   --->   Core 20 'FDiv' <Latency = 8> <II = 1> <Delay = 7.05> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+ST_28 : Operation 62 [1/1] (0.00ns)   --->   "%ret_ln25 = ret i32 %div" [sigmoid.cpp:25]   --->   Operation 62 'ret' 'ret_ln25' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 7.02ns
+The critical path consists of the following:
+	wire read on port 'a' (sigmoid.cpp:22) [6]  (0 ns)
+	'fmul' operation ('mul', sigmoid.cpp:24) [7]  (7.02 ns)
+
+ <State 2>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('mul', sigmoid.cpp:24) [7]  (7.02 ns)
+
+ <State 3>: 7.02ns
+The critical path consists of the following:
+	'fmul' operation ('mul', sigmoid.cpp:24) [7]  (7.02 ns)
+
+ <State 4>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 5>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 6>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 7>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 8>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 9>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 10>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 11>: 4.91ns
+The critical path consists of the following:
+	'fexp' operation ('tmp', sigmoid.cpp:24) [8]  (4.91 ns)
+
+ <State 12>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('exp2a', sigmoid.cpp:24) [9]  (6.44 ns)
+
+ <State 13>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('exp2a', sigmoid.cpp:24) [9]  (6.44 ns)
+
+ <State 14>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('exp2a', sigmoid.cpp:24) [9]  (6.44 ns)
+
+ <State 15>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('exp2a', sigmoid.cpp:24) [9]  (6.44 ns)
+
+ <State 16>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('sub', sigmoid.cpp:25) [10]  (6.44 ns)
+
+ <State 17>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('sub', sigmoid.cpp:25) [10]  (6.44 ns)
+
+ <State 18>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('sub', sigmoid.cpp:25) [10]  (6.44 ns)
+
+ <State 19>: 6.44ns
+The critical path consists of the following:
+	'fadd' operation ('sub', sigmoid.cpp:25) [10]  (6.44 ns)
+
+ <State 20>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 21>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 22>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 23>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 24>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 25>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 26>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 27>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+ <State 28>: 7.06ns
+The critical path consists of the following:
+	'fdiv' operation ('div', sigmoid.cpp:25) [11]  (7.06 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,38 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Admin' on host 'desktop-1h41fin' (Windows NT_amd64 version 6.2) on Wed Sep 08 09:56:00 +0700 2021
+INFO: [HLS 200-10] In directory 'E:/CMC/CNN/VitisHLS/RAM'
+Sourcing Tcl script 'E:/CMC/CNN/VitisHLS/RAM/ram/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project ram 
+INFO: [HLS 200-10] Opening project 'E:/CMC/CNN/VitisHLS/RAM/ram'.
+INFO: [HLS 200-1510] Running: set_top ram 
+INFO: [HLS 200-1510] Running: add_files ram.cpp 
+INFO: [HLS 200-10] Adding design file 'ram.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'E:/CMC/CNN/VitisHLS/RAM/ram/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output E:/CMC/CNN/Vivado/Ipcore/ram.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'ram_ap_fpext_0_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'ram_ap_fpext_0_no_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  8 09:56:13 2021...
+INFO: [HLS 200-802] Generated output file E:/CMC/CNN/Vivado/Ipcore/ram.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 11.586 seconds; current allocated memory: 199.015 MB.

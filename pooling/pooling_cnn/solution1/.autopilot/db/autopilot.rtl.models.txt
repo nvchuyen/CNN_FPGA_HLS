@@ -1,0 +1,6 @@
+pooling_cnn_mux_1127_32_1_1
+pooling_cnn_pool_layer1_pool_buff_0_val_V
+pooling_cnn_regslice_both
+pooling_cnn_regslice_both
+pool_layer1
+pooling_cnn

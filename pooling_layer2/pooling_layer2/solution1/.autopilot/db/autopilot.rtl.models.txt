@@ -1,0 +1,6 @@
+pooling_layer2_fcmp_32ns_32ns_1_2_no_dsp_1
+pooling_layer2_mux_1287_32_1_1
+pooling_layer2_pool_buff_val_0
+pooling_layer2_regslice_both
+pooling_layer2_regslice_both
+pooling_layer2

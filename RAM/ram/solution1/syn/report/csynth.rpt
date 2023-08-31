@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'ram'
+================================================================
++ General Information: 
+    * Date:           Wed Sep  8 09:54:54 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        ram
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |       Modules      | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |         |    |           |            |     |
+    |       & Loops      | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined|  BRAM   | DSP|     FF    |     LUT    | URAM|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+    |+ ram               |     -|  -0.82|      789|  7.890e+03|         -|      790|     -|        no|  2 (~0%)|   -|  312 (~0%)|  2118 (~0%)|    -|
+    | o input_hardcode   |     -|  -7.30|      784|  7.840e+03|         2|        1|   784|       yes|        -|   -|          -|           -|    -|
+    | o output_hardcode  |     -|  -7.30|      787|  7.870e+03|         5|        1|   784|       yes|        -|   -|          -|           -|    -|
+    +--------------------+------+-------+---------+-----------+----------+---------+------+----------+---------+----+-----------+------------+-----+
+

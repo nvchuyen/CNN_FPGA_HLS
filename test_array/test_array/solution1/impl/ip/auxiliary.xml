@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="test_array" xd:componentRef="test_array" xd:initiationInterval="620" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:arg xd:name="in" xd:originalName="in" xd:direction="in" xd:interfaceRef="in_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="out" xd:originalName="out" xd:direction="out" xd:interfaceRef="out_V" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="*(test_val2)" xd:originalName="test_val2" xd:direction="out" xd:interfaceRef="test_val2" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="3"/>
+  <xd:arg xd:name="*(test_bias)" xd:originalName="test_bias" xd:direction="out" xd:interfaceRef="test_bias" xd:busTypeRef="register" xd:handshakeRef="ap_vld" xd:dataWidth="1" xd:firstOut="3"/>
+  <xd:latencyEstimates xd:best-case="619" xd:worst-case="619" xd:average-case="619"/>
+  <xd:resourceEstimates xd:LUT="2183" xd:FF="2072" xd:BRAM="0" xd:DSP="5"/>
+</xd:acceleratorMap>

@@ -1,0 +1,52 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'Admin' on host 'desktop-1h41fin' (Windows NT_amd64 version 6.2) on Tue Sep 07 07:56:41 +0700 2021
+INFO: [HLS 200-10] In directory 'E:/CMC/CNN/VitisHLS/fully_connected'
+Sourcing Tcl script 'E:/CMC/CNN/VitisHLS/fully_connected/fully_layer/solution1/csim.tcl'
+INFO: [HLS 200-1510] Running: open_project fully_layer 
+INFO: [HLS 200-10] Opening project 'E:/CMC/CNN/VitisHLS/fully_connected/fully_layer'.
+INFO: [HLS 200-1510] Running: set_top fully_layer 
+INFO: [HLS 200-1510] Running: add_files fully_layer.cpp 
+INFO: [HLS 200-10] Adding design file 'fully_layer.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files headers1/defines.h 
+INFO: [HLS 200-10] Adding design file 'headers1/defines.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb fully_layer_test.cpp -cflags -Wno-unknown-pragmas -csimflags -Wno-unknown-pragmas 
+INFO: [HLS 200-10] Adding test bench file 'fully_layer_test.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'E:/CMC/CNN/VitisHLS/fully_connected/fully_layer/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: csim_design -setup -quiet 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../fully_layer.cpp in debug mode
+   Generating csim.exe
+In file included from C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:144:0,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../../headers1/buffer.h:23,
+                 from ../../../../fully_layer.cpp:2:
+C:/Xilinx/Vitis_HLS/2020.2/include/gmp.h:63:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from C:/Xilinx/Vitis_HLS/2020.2/include/hls_fpo.h:189:0,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half_fpo.h:64,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/hls_half.h:71,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/etc/ap_private.h:91,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_common.h:646,
+                 from C:/Xilinx/Vitis_HLS/2020.2/include/ap_fixed.h:55,
+                 from ../../../../headers1/buffer.h:23,
+                 from ../../../../fully_layer.cpp:2:
+C:/Xilinx/Vitis_HLS/2020.2/include/floating_point_v7_0_bitacc_cmodel.h:136:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [HLS 200-111] Finished Command csim_design CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 2.569 seconds; current allocated memory: 191.508 MB.

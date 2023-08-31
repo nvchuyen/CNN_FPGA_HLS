@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="defines.h" path="F:\NVChuyen\CNN\VitisHLS\fully1_cnn\headers1\defines.h"/>
+    <originFiles name="fully1_cnn.cpp" path="F:\NVChuyen\CNN\VitisHLS\fully1_cnn\fully1_cnn.cpp"/>
+    <originFiles name="input.h" path="F:\NVChuyen\CNN\VitisHLS\fully1_cnn\headers1\input.h"/>
+    <originFiles name="output.h" path="F:\NVChuyen\CNN\VitisHLS\fully1_cnn\headers1\output.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fully1_test.cpp" path="F:\NVChuyen\CNN\VitisHLS\fully1_cnn\fully1_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

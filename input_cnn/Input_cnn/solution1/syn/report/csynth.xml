@@ -1,0 +1,388 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>input_cnn</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>1.237</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>787</Best-caseLatency>
+            <Average-caseLatency>787</Average-caseLatency>
+            <Worst-caseLatency>787</Worst-caseLatency>
+            <Best-caseRealTimeLatency>7.870 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>7.870 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>7.870 us</Worst-caseRealTimeLatency>
+            <Interval-min>788</Interval-min>
+            <Interval-max>788</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <input_hardcode>
+                <TripCount>784</TripCount>
+                <Latency>785</Latency>
+                <AbsoluteTimeLatency>7850</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>3</PipelineDepth>
+            </input_hardcode>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>2</BRAM_18K>
+            <FF>18</FF>
+            <LUT>96</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>input_cnn</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>input_cnn</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_str_V_TDATA</name>
+            <Object>out_str_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_str_V_TVALID</name>
+            <Object>out_str_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_str_V_TREADY</name>
+            <Object>out_str_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>enable</name>
+            <Object>enable</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>data</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>enable_ap_vld</name>
+            <Object>enable</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>bool</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>input_cnn</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>input_cnn</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>1.237</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>787</Best-caseLatency>
+                    <Average-caseLatency>787</Average-caseLatency>
+                    <Worst-caseLatency>787</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>7.870 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>7.870 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>7.870 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>788</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <input_hardcode>
+                        <Name>input_hardcode</Name>
+                        <TripCount>784</TripCount>
+                        <Latency>785</Latency>
+                        <AbsoluteTimeLatency>7.850 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                    </input_hardcode>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <FF>18</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>96</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>input_cnn</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>input_cnn</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_str_V_TDATA</name>
+                    <Object>out_str_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_str_V_TVALID</name>
+                    <Object>out_str_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_str_V_TREADY</name>
+                    <Object>out_str_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>enable</name>
+                    <Object>enable</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>enable_ap_vld</name>
+                    <Object>enable</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>bool</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="out_str" index="0" direction="out" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="out_str_V" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="enable" index="1" direction="out" srcType="bool*" srcSize="1">
+            <hwRefs>
+                <hwRef type="port" interface="enable" name="enable" usage="data" direction="out"/>
+                <hwRef type="port" interface="enable_ap_vld" name="enable_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">out_str_V</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="enable" type="data" busTypeName="data" mode="master" dataWidth="1">
+            <portMaps>
+                <portMap portMapName="enable">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>enable</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="enable"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_str_V" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_str_V_">
+            <ports>
+                <port>out_str_V_TDATA</port>
+                <port>out_str_V_TREADY</port>
+                <port>out_str_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out_str"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="out_str_V">both, 32, 1, 1</column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="enable">ap_none, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="out_str">out, stream&lt;float 0&gt;&amp;</column>
+                    <column name="enable">out, bool*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="out_str">out_str_V, interface</column>
+                    <column name="enable">enable, port</column>
+                    <column name="enable">enable_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

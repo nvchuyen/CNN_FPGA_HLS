@@ -1,0 +1,427 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'pooling_layer1'" level="0">
+<item name = "Date">Wed Sep  8 10:12:42 2021
+</item>
+<item name = "Version">2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)</item>
+<item name = "Project">pooling_layer1</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.164 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">9220, 9220, 92.200 us, 92.200 us, 9221, 9221, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4">9218, 9218, 4, 1, 1, 9216, yes</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 456, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 0, 1017, -</column>
+<column name="Memory">0, -, 12288, 192, -</column>
+<column name="Multiplexer">-, -, -, 137, -</column>
+<column name="Register">-, -, 247, 32, -</column>
+<specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 2, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="fcmp_32ns_32ns_1_2_no_dsp_1_U1">fcmp_32ns_32ns_1_2_no_dsp_1, 0, 0, 0, 0, 0</column>
+<column name="mux_1928_32_1_1_U2">mux_1928_32_1_1, 0, 0, 0, 1017, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="pool_buff_val_0_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_1_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_2_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_3_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_4_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_5_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_6_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_7_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_8_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_9_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_10_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_11_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_12_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_13_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_14_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_15_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_16_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_17_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_18_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_19_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_20_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_21_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_22_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_23_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_24_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_25_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_26_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_27_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_28_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_29_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_30_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_31_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_32_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_33_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_34_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_35_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_36_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_37_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_38_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_39_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_40_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_41_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_42_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_43_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_44_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_45_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_46_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_47_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_48_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_49_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_50_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_51_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_52_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_53_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_54_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_55_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_56_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_57_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_58_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_59_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_60_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_61_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_62_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_63_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_64_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_65_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_66_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_67_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_68_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_69_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_70_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_71_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_72_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_73_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_74_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_75_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_76_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_77_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_78_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_79_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_80_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_81_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_82_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_83_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_84_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_85_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_86_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_87_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_88_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_89_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_90_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_91_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_92_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_93_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_94_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_95_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_96_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_97_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_98_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_99_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_100_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_101_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_102_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_103_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_104_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_105_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_106_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_107_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_108_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_109_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_110_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_111_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_112_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_113_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_114_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_115_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_116_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_117_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_118_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_119_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_120_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_121_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_122_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_123_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_124_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_125_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_126_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_127_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_128_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_129_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_130_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_131_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_132_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_133_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_134_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_135_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_136_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_137_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_138_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_139_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_140_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_141_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_142_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_143_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_144_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_145_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_146_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_147_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_148_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_149_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_150_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_151_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_152_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_153_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_154_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_155_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_156_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_157_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_158_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_159_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_160_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_161_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_162_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_163_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_164_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_165_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_166_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_167_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_168_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_169_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_170_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_171_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_172_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_173_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_174_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_175_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_176_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_177_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_178_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_179_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_180_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_181_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_182_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_183_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_184_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_185_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_186_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_187_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_188_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_189_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_190_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+<column name="pool_buff_val_191_U">pool_buff_val_0, 0, 64, 1, 0, 1, 32, 1, 32</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln24_fu_6165_p2">+, 0, 0, 21, 14, 1</column>
+<column name="add_ln25_1_fu_6209_p2">+, 0, 0, 18, 11, 1</column>
+<column name="add_ln26_1_fu_6955_p2">+, 0, 0, 17, 10, 1</column>
+<column name="add_ln26_fu_6415_p2">+, 0, 0, 12, 4, 1</column>
+<column name="add_ln27_1_fu_6941_p2">+, 0, 0, 14, 7, 1</column>
+<column name="add_ln28_fu_6935_p2">+, 0, 0, 12, 5, 1</column>
+<column name="l_2_fu_6325_p2">+, 0, 0, 9, 2, 1</column>
+<column name="m_2_fu_6474_p2">+, 0, 0, 9, 2, 1</column>
+<column name="and_ln18_1_fu_6278_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln18_2_fu_6295_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln18_3_fu_6307_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln18_4_fu_6319_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln18_5_fu_6460_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln18_fu_6267_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln25_1_fu_6401_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln25_fu_6395_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln35_1_fu_7028_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln35_fu_7022_p2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state2_pp0_stage0_iter0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state4_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state5_io">and, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_state2_pp0_iter0_stage0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_state3_pp0_iter1_stage0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_enable_state4_pp0_iter2_stage0">and, 0, 0, 2, 1, 1</column>
+<column name="cmp27_not_i_fu_6227_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="cmp27_not_i_mid1_fu_6356_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="cmp28_not_i_fu_6243_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="cmp28_not_i_mid1_fu_6500_p2">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln24_fu_6171_p2">icmp, 0, 0, 12, 14, 14</column>
+<column name="icmp_ln25_fu_6177_p2">icmp, 0, 0, 11, 11, 10</column>
+<column name="icmp_ln26_fu_6313_p2">icmp, 0, 0, 11, 10, 9</column>
+<column name="icmp_ln27_fu_6301_p2">icmp, 0, 0, 10, 7, 6</column>
+<column name="icmp_ln28_fu_6289_p2">icmp, 0, 0, 10, 5, 6</column>
+<column name="icmp_ln35_1_fu_7006_p2">icmp, 0, 0, 16, 23, 1</column>
+<column name="icmp_ln35_2_fu_6197_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln35_3_fu_6203_p2">icmp, 0, 0, 16, 23, 1</column>
+<column name="icmp_ln35_fu_7000_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="ap_block_pp0_stage0_00001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_pp0_stage0_11001">or, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_op1463_store_state4">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge22_i_fu_6249_p2">or, 0, 0, 2, 1, 1</column>
+<column name="brmerge22_i_mid1_fu_6506_p2">or, 0, 0, 2, 1, 1</column>
+<column name="empty_fu_6237_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_1_fu_6284_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_2_fu_6421_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_3_fu_6448_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_4_fu_6427_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln18_fu_6273_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln25_1_fu_6378_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln25_2_fu_6390_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln25_fu_6331_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln27_1_fu_6486_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln27_fu_6480_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln35_1_fu_7018_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln35_fu_7012_p2">or, 0, 0, 2, 1, 1</column>
+<column name="p_mid1_fu_6972_p2">or, 0, 0, 2, 1, 1</column>
+<column name="select_ln18_1_fu_6432_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln18_2_fu_6440_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln18_fu_6255_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln25_1_fu_6348_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln25_2_fu_6362_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln25_3_fu_6370_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln25_4_fu_6407_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln25_5_fu_6215_p3">select, 0, 0, 10, 1, 1</column>
+<column name="select_ln25_fu_6336_p3">select, 0, 0, 4, 1, 1</column>
+<column name="select_ln26_1_fu_6961_p3">select, 0, 0, 10, 1, 1</column>
+<column name="select_ln26_fu_6466_p3">select, 0, 0, 4, 1, 4</column>
+<column name="select_ln27_1_fu_6977_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln27_2_fu_6512_p3">select, 0, 0, 2, 1, 1</column>
+<column name="select_ln27_3_fu_6520_p3">select, 0, 0, 2, 1, 2</column>
+<column name="select_ln27_4_fu_6947_p3">select, 0, 0, 7, 1, 1</column>
+<column name="select_ln27_fu_6492_p3">select, 0, 0, 5, 1, 1</column>
+<column name="select_ln35_fu_7034_p3">select, 0, 0, 32, 1, 32</column>
+<column name="storemerge_fu_7040_p3">select, 0, 0, 32, 1, 32</column>
+<column name="ap_enable_pp0">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln18_1_fu_6454_p2">xor, 0, 0, 2, 2, 1</column>
+<column name="xor_ln18_fu_6262_p2">xor, 0, 0, 2, 1, 2</column>
+<column name="xor_ln25_fu_6384_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">20, 4, 1, 4</column>
+<column name="ap_enable_reg_pp0_iter2">9, 2, 1, 2</column>
+<column name="ap_enable_reg_pp0_iter3">9, 2, 1, 2</column>
+<column name="ap_phi_mux_j_phi_fu_6121_p4">9, 2, 4, 8</column>
+<column name="in_V_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="indvar_flatten19_reg_6106">9, 2, 10, 20</column>
+<column name="indvar_flatten47_reg_6084">9, 2, 11, 22</column>
+<column name="indvar_flatten87_reg_6073">9, 2, 14, 28</column>
+<column name="indvar_flatten_reg_6128">9, 2, 7, 14</column>
+<column name="j_reg_6117">9, 2, 4, 8</column>
+<column name="k_reg_6150">9, 2, 5, 10</column>
+<column name="l_reg_6095">9, 2, 2, 4</column>
+<column name="m_reg_6139">9, 2, 2, 4</column>
+<column name="out_V_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="and_ln18_5_reg_9219">1, 0, 1, 0</column>
+<column name="ap_CS_fsm">3, 0, 3, 0</column>
+<column name="ap_enable_reg_pp0_iter0">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter1">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter2">1, 0, 1, 0</column>
+<column name="ap_enable_reg_pp0_iter3">1, 0, 1, 0</column>
+<column name="icmp_ln24_reg_9169">1, 0, 1, 0</column>
+<column name="icmp_ln25_reg_9173">1, 0, 1, 0</column>
+<column name="icmp_ln35_2_reg_9189">1, 0, 1, 0</column>
+<column name="icmp_ln35_2_reg_9189_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="icmp_ln35_3_reg_9194">1, 0, 1, 0</column>
+<column name="icmp_ln35_3_reg_9194_pp0_iter1_reg">1, 0, 1, 0</column>
+<column name="in_V_read_reg_9184">32, 0, 32, 0</column>
+<column name="indvar_flatten19_reg_6106">10, 0, 10, 0</column>
+<column name="indvar_flatten47_reg_6084">11, 0, 11, 0</column>
+<column name="indvar_flatten87_reg_6073">14, 0, 14, 0</column>
+<column name="indvar_flatten_reg_6128">7, 0, 7, 0</column>
+<column name="j_reg_6117">4, 0, 4, 0</column>
+<column name="k_reg_6150">5, 0, 5, 0</column>
+<column name="l_reg_6095">2, 0, 2, 0</column>
+<column name="m_2_reg_9229">2, 0, 2, 0</column>
+<column name="m_reg_6139">2, 0, 2, 0</column>
+<column name="p_t_reg_9250">8, 0, 8, 0</column>
+<column name="read_reg_9243">32, 0, 32, 0</column>
+<column name="select_ln18_2_reg_9214">1, 0, 1, 0</column>
+<column name="select_ln25_1_reg_9204">1, 0, 1, 0</column>
+<column name="select_ln26_reg_9224">4, 0, 4, 0</column>
+<column name="select_ln27_2_reg_9234">1, 0, 1, 0</column>
+<column name="select_ln27_2_reg_9234_pp0_iter2_reg">1, 0, 1, 0</column>
+<column name="tmp_reg_9254">32, 0, 32, 0</column>
+<column name="icmp_ln24_reg_9169">64, 32, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_none, pooling_layer1, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_none, pooling_layer1, return value</column>
+<column name="in_V_TDATA">in, 32, axis, in_V, pointer</column>
+<column name="in_V_TVALID">in, 1, axis, in_V, pointer</column>
+<column name="in_V_TREADY">out, 1, axis, in_V, pointer</column>
+<column name="out_V_TDATA">out, 32, axis, out_V, pointer</column>
+<column name="out_V_TVALID">out, 1, axis, out_V, pointer</column>
+<column name="out_V_TREADY">in, 1, axis, out_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,26 @@
+
+
+================================================================
+== Synthesis Summary Report of 'test_array'
+================================================================
++ General Information: 
+    * Date:           Mon Jul  5 15:31:43 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        test_array
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |        Modules        | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |         |            |            |     |
+    |        & Loops        | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM |   DSP   |     FF     |     LUT    | URAM|
+    +-----------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+    |+ test_array           |     -|  -0.03|      619|  6.190e+03|         -|      620|     -|        no|     -|  5 (~0%)|  2072 (~0%)|  2183 (~0%)|    -|
+    | o conv_init_buffer    |     -|  -7.30|      100|  1.000e+03|         1|        -|   100|        no|     -|        -|           -|           -|    -|
+    | o conv_layer1_label2  |    II|  -7.30|      516|  5.160e+03|        76|       63|     8|       yes|     -|        -|           -|           -|    -|
+    +-----------------------+------+-------+---------+-----------+----------+---------+------+----------+------+---------+------------+------------+-----+
+

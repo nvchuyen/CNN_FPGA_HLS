@@ -1,0 +1,11 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="ram.cpp:97:24" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb12.store.2" VarName="_ZL11image_input"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="ram.cpp:106:9" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb15.load.1" VarName="_ZL11image_input"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="ram.cpp:97:24" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb12.store.2" VarName="_ZL11image_input"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="ram.cpp:106:9" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by getelementptr" ID="bb15.load.1" VarName="_ZL11image_input"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+</VitisHLS:BurstInfo>
+

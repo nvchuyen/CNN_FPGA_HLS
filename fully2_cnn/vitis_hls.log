@@ -1,0 +1,37 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'CMC' on host 'desktop-qvhj8po' (Windows NT_amd64 version 6.2) on Tue Jul 20 14:31:43 +0700 2021
+INFO: [HLS 200-10] In directory 'F:/NVChuyen/CNN/VitisHLS/fully2_cnn'
+Sourcing Tcl script 'F:/NVChuyen/CNN/VitisHLS/fully2_cnn/fully2_cnn/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project fully2_cnn 
+INFO: [HLS 200-10] Opening project 'F:/NVChuyen/CNN/VitisHLS/fully2_cnn/fully2_cnn'.
+INFO: [HLS 200-1510] Running: set_top fully2_cnn 
+INFO: [HLS 200-1510] Running: add_files fully2_cnn.cpp 
+INFO: [HLS 200-10] Adding design file 'fully2_cnn.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'F:/NVChuyen/CNN/VitisHLS/fully2_cnn/fully2_cnn/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Jul 20 14:32:00 2021...
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 16.155 seconds; current allocated memory: 198.716 MB.

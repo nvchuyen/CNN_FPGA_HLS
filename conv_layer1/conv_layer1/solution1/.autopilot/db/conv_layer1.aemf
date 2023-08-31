@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1631162420364">
+  <ports id="1" name="in_stream_V" type="PortType" originalName="in_stream" coreId="9851" bitwidth="32">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="out_stream_V" type="PortType" originalName="out_stream" coreId="8910" bitwidth="32" direction="DirOut">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <edges id="13" source_obj="//@ports.0" sink_obj="//@blocks.0/@node_objs.0"/>
+  <edges id="14" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@ports.1"/>
+  <blocks id="10" name="conv_layer1" type="BlockType">
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="_ln20" lineNumber="20" fileName="conv_layer1.cpp" fileDirectory=".." rtlName="grp_convolution_fu_24" coreId="3909376464" contextFuncName="conv_layer1" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="0.52" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="conv_layer1.cpp" linenumber="20" fileDirectory="E:\CMC\CNN\VitisHLS\conv_layer1" functionName="conv_layer1"/>
+      <dataInputObjs>in_stream_V</dataInputObjs>
+      <dataOutputObjs>out_stream_V</dataOutputObjs>
+      <constName>convolution</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="_ln21" lineNumber="21" fileName="conv_layer1.cpp" fileDirectory=".." coreId="3930834912" contextFuncName="conv_layer1" opcode="ret" nodeLabel="3.0" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <inlineStackInfo fileName="conv_layer1.cpp" linenumber="21" fileDirectory="E:\CMC\CNN\VitisHLS\conv_layer1" functionName="conv_layer1"/>
+    </node_objs>
+    <fileValidLineNumbers fileName="conv_layer1.cpp">
+      <validLinenumbers>20</validLinenumbers>
+      <validLinenumbers>21</validLinenumbers>
+    </fileValidLineNumbers>
+  </blocks>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <moduleNodes realName="grp_convolution_fu_24">
+    <nodeIds>8</nodeIds>
+  </moduleNodes>
+  <ioPorts name="in_stream_V">
+    <contents name="call">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="out_stream_V">
+    <contents name="call">
+      <nodeIds>8</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1"/>
+    <states id="2">
+      <operations id="8" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="8" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="3" stage="1" latency="1"/>
+      <operations id="4" stage="1" latency="1"/>
+      <operations id="5" stage="1" latency="1"/>
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="conv_layer1" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="18897" mMaxLatency="59730">
+      <basicBlocks>10</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

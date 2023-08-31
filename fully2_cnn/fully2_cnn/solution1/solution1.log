@@ -1,0 +1,1138 @@
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.152 seconds; current allocated memory: 970.995 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:598:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:699:9
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:87
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:44
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:85
+WARNING: [HLS 207-5301] unused parameter 'src': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:31
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:85
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:44
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:85
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:78
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:89
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:87
+WARNING: [HLS 207-5301] unused parameter 'sqsum': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:319:54
+WARNING: [HLS 207-5301] unused parameter 'cast': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:278:27
+WARNING: [HLS 207-1017] unknown pragma ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:1157:9
+WARNING: [HLS 207-5301] unused parameter 'flags': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:163:39
+WARNING: [HLS 207-5301] unused parameter 'x': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:435:24
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_haar.h:192:43
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 37.002 seconds; current allocated memory: 196.419 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:16:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:31:6)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:22:5)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label2' (fully2_cnn.cpp:28:20) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:28:20)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:23:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:23:22)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' into 'fully2_cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (fully2_cnn.cpp:38:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.509 seconds; current allocated memory: 197.047 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.094 seconds; current allocated memory: 197.048 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.29 seconds; current allocated memory: 198.383 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.553 seconds; current allocated memory: 197.640 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_17_1' (fully2_cnn.cpp:17) in function 'fully2_cnn' automatically.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.271 seconds; current allocated memory: 218.135 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:18:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.224 seconds; current allocated memory: 210.594 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_17_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_17_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 10, Depth = 10, loop 'fc_layer2_label1'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.334 seconds; current allocated memory: 211.008 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.731 seconds; current allocated memory: 211.452 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.359 seconds; current allocated memory: 212.279 MB.
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 3.19 seconds; current allocated memory: 219.311 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.53 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 48.924 seconds; current allocated memory: 219.410 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 53.455 seconds; peak allocated memory: 970.995 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 1 seconds. Elapsed time: 34.215 seconds; current allocated memory: 198.951 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.098 seconds; current allocated memory: 581.340 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:598:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:699:9
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:87
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:44
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:85
+WARNING: [HLS 207-5301] unused parameter 'src': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:31
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:85
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:44
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:85
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:78
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:89
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:87
+WARNING: [HLS 207-5301] unused parameter 'sqsum': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:319:54
+WARNING: [HLS 207-5301] unused parameter 'cast': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:278:27
+WARNING: [HLS 207-1017] unknown pragma ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:1157:9
+WARNING: [HLS 207-5301] unused parameter 'flags': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:163:39
+WARNING: [HLS 207-5301] unused parameter 'x': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:435:24
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_haar.h:192:43
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 0 seconds. Elapsed time: 35.473 seconds; current allocated memory: 196.566 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:16:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:31:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:22:5)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:23:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:23:22)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' into 'fully2_cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (fully2_cnn.cpp:38:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.973 seconds; current allocated memory: 197.261 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 197.262 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.27 seconds; current allocated memory: 198.542 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.144 seconds; current allocated memory: 197.813 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_17_1' (fully2_cnn.cpp:17) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:28) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.259 seconds; current allocated memory: 218.312 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:18:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:25:12)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 210.795 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_17_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_17_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 10, Depth = 10, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.338 seconds; current allocated memory: 211.204 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.313 seconds; current allocated memory: 211.593 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.319 seconds; current allocated memory: 212.553 MB.
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.349 seconds; current allocated memory: 219.719 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.53 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 1 seconds. Elapsed time: 45.034 seconds; current allocated memory: 219.761 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 2 seconds. Total elapsed time: 48.36 seconds; peak allocated memory: 581.340 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 16.039 seconds; current allocated memory: 199.035 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 581.341 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:598:9
+WARNING: [HLS 207-5496] the pragma is not supported and will be ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_core.h:699:9
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:116:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:130:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:144:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:174:87
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:44
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:183:85
+WARNING: [HLS 207-5301] unused parameter 'src': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:31
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:65
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:75
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:192:85
+WARNING: [HLS 207-5301] unused parameter 'val': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:44
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:201:85
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:215:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:226:87
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:237:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:78
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:248:89
+WARNING: [HLS 207-5301] unused parameter 'p0': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:67
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:261:87
+WARNING: [HLS 207-5301] unused parameter 'p1': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:77
+WARNING: [HLS 207-5301] unused parameter 'p2': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:289:87
+WARNING: [HLS 207-5301] unused parameter 'sqsum': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_arithm.h:319:54
+WARNING: [HLS 207-5301] unused parameter 'cast': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:278:27
+WARNING: [HLS 207-1017] unknown pragma ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_imgproc.h:1157:9
+WARNING: [HLS 207-5301] unused parameter 'flags': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:163:39
+WARNING: [HLS 207-5301] unused parameter 'x': C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_undistort.h:435:24
+WARNING: [HLS 207-5514] extra token before variable expression is ignored: C:\Xilinx\Vivado\2020.2\data\ip\xilinx\v_axi4s_remap_v1_0\src/hls/hls_video_haar.h:192:43
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 36.527 seconds; current allocated memory: 196.583 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:17:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:31:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:23:5)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:24:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:24:22)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' into 'fully2_cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (fully2_cnn.cpp:38:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 4.951 seconds; current allocated memory: 197.263 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.093 seconds; current allocated memory: 197.264 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.263 seconds; current allocated memory: 198.543 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 197.798 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_18_1' (fully2_cnn.cpp:15) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:15) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 218.311 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:19:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:26:12)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.239 seconds; current allocated memory: 210.793 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_18_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_18_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 10, Depth = 10, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.383 seconds; current allocated memory: 211.218 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.32 seconds; current allocated memory: 211.607 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.328 seconds; current allocated memory: 212.567 MB.
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 2.427 seconds; current allocated memory: 219.717 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.53 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 7 seconds. CPU system time: 3 seconds. Elapsed time: 46.245 seconds; current allocated memory: 219.775 MB.
+INFO: [HLS 200-112] Total CPU user time: 9 seconds. Total CPU system time: 4 seconds. Total elapsed time: 49.394 seconds; peak allocated memory: 581.341 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 21.196 seconds; current allocated memory: 199.130 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 581.343 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:35:16
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:36:19
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:37:18
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:38:2
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:40:2
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:57:29
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:63:32
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:73:31
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/buffer.h:83:1
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/weights.h:61:1
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/weights.h:63:1
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/weights.h:4856:1
+ERROR: [HLS 207-3796] unknown type name 'float24_t': ./headers1/weights.h:4858:1
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 8.765 seconds; current allocated memory: 192.871 MB.
+INFO: [HLS 200-112] Total CPU user time: 4 seconds. Total CPU system time: 1 seconds. Total elapsed time: 12.504 seconds; peak allocated memory: 581.343 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.108 seconds; current allocated memory: 191.544 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.364 seconds; current allocated memory: 192.789 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::read(float&)' into 'hls::stream<float, 0>::operator>>(float&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::write(float const&)' into 'hls::stream<float, 0>::operator<<(float const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:17:5)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator<<(float const&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:31:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<float, 0>::operator>>(float&)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:23:5)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:24:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:24:22)
+INFO: [HLS 214-178] Inlining function 'relu(float)' into 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' (fully2_cnn.cpp:12:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<float, 0>&, hls::stream<float, 0>&, float (*) [2], float*)' into 'fully2_cnn(hls::stream<float, 0>&, hls::stream<float, 0>&)' (fully2_cnn.cpp:38:0)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.403 seconds; current allocated memory: 194.204 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 194.204 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.354 seconds; current allocated memory: 195.483 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.366 seconds; current allocated memory: 194.753 MB.
+INFO: [XFORM 203-510] Pipelining loop 'Loop-2' in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_18_1' (fully2_cnn.cpp:15) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:15) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.268 seconds; current allocated memory: 215.267 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:19:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output' (fully2_cnn.cpp:26:12)
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.217 seconds; current allocated memory: 207.762 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 1, loop 'Loop 1'
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_18_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 6, loop 'VITIS_LOOP_18_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 10, Depth = 10, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 9, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.343 seconds; current allocated memory: 208.234 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.522 seconds; current allocated memory: 208.623 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fcmp_32ns_32ns_1_2_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.418 seconds; current allocated memory: 209.585 MB.
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.833 seconds; current allocated memory: 217.789 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 142.53 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 1 seconds. Elapsed time: 17.47 seconds; current allocated memory: 217.889 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 20.499 seconds; peak allocated memory: 217.789 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.102 seconds; current allocated memory: 191.544 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 14.139 seconds; current allocated memory: 192.789 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:556:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:32)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:8)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::read(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<48, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::mult ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 16, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<49, 17, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 16, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 16, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<48, 16, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<49, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<25, 9, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'relu(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::write(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:15:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:18:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<25, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::plus ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::mult ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:24:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<48, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<24, 8, true>::mult ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<24, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:28)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:25:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:25:22)
+INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'fully2_cnn(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (fully2_cnn.cpp:39:0)
+INFO: [HLS 214-127] Reshaped Stream/Pipe in_V from 4 * 1(bytes) to 3 * 2(bytes). Max AXI Stream Data Width is 64(bytes) (fully2_cnn.cpp:39:0)
+INFO: [HLS 214-127] Reshaped Stream/Pipe out_V from 4 * 1(bytes) to 3 * 2(bytes). Max AXI Stream Data Width is 64(bytes) (fully2_cnn.cpp:39:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i24.s_struct.ap_fixeds' into 'fully2_cnn(hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<24, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.788 seconds; current allocated memory: 195.285 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 195.286 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.318 seconds; current allocated memory: 205.536 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.277 seconds; current allocated memory: 221.044 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_19_1' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias.V' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias.V' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.399 seconds; current allocated memory: 256.452 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' (fully2_cnn.cpp:20:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.302 seconds; current allocated memory: 258.292 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1115) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192_1) to 3 in order to utilize available DSP registers.
+INFO: [HLS 200-486] Changing DSP48 latency (root=mul_ln1192) to 3 in order to utilize available DSP registers.
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 5, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 6, Depth = 6, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 0.344 seconds; current allocated memory: 258.636 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.288 seconds; current allocated memory: 258.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mac_muladd_17s_24s_40ns_40_4_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_mul_17s_24s_40_4_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.305 seconds; current allocated memory: 259.803 MB.
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_V_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.602 seconds; current allocated memory: 266.643 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 281.73 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 5 seconds. CPU system time: 1 seconds. Elapsed time: 26.166 seconds; current allocated memory: 266.764 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 29.31 seconds; peak allocated memory: 266.643 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/fully2_cnn/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 11.657 seconds; current allocated memory: 198.716 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.107 seconds; current allocated memory: 581.343 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 16.386 seconds; current allocated memory: 192.789 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:556:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:32)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:8)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::read(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<64, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<65, 17, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 9, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::write(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:15:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:18:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:24:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:28)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:25:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:25:22)
+INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'fully2_cnn(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (fully2_cnn.cpp:39:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fully2_cnn(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 6.761 seconds; current allocated memory: 195.268 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.1 seconds; current allocated memory: 195.269 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.342 seconds; current allocated memory: 205.223 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.363 seconds; current allocated memory: 220.302 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_19_1' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias.V' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias.V' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.392 seconds; current allocated memory: 255.246 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' (fully2_cnn.cpp:20:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.3 seconds; current allocated memory: 256.876 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 3, Depth = 3, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.322 seconds; current allocated memory: 257.189 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.25 seconds; current allocated memory: 257.509 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_25s_32s_56_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.297 seconds; current allocated memory: 258.233 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'fully2_cnn_mul_25s_32s_56_1_1_Multiplier_0'
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_V_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.525 seconds; current allocated memory: 265.081 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 187.48 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 28.343 seconds; current allocated memory: 265.186 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 31.877 seconds; peak allocated memory: 581.343 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.103 seconds; current allocated memory: 581.343 MB.
+INFO: [HLS 200-10] Analyzing design file 'fully2_cnn.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 13.374 seconds; current allocated memory: 192.789 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<11, false>(ap_int_base<11, false> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<65>::ap_int<65, true>(ap_int_base<65, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<65, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<64, true>::ap_int_base(long)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1548)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<64, true>::minus operator-<11, false, 64, true>(ap_int_base<11, false> const&, ap_int_base<64, true> const&)' into 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1463:1546)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<1, false>(ap_int_base<1, false> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:341)
+INFO: [HLS 214-131] Inlining function 'ap_int<55>::ap_int<55, true>(ap_int_base<55, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:555)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<55, true>::ap_int_base<54, true>(ap_int_base<54, true> const&)' into 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:1347:430)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::ap_int_base(int)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:12)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<1, false>::RType<54, true>::minus operator-<1, false, 54, true>(ap_int_base<1, false> const&, ap_int_base<54, true> const&)' into 'ap_int_base<54, true>::operator-() const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_int_base.h:746:37)
+INFO: [HLS 214-131] Inlining function 'doubleToRawBits(double)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:556:14)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>& ap_int_base<54, true>::operator=<55, true>(ap_int_base<55, true> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:20)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<54, true>::operator-() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:570:22)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<12, true>& ap_int_base<12, true>::operator=<65, true>(ap_int_base<65, true> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:9)
+INFO: [HLS 214-131] Inlining function 'ap_int_base<11, false>::RType<($_0)64, true>::minus operator-<11, false>(ap_int_base<11, false> const&, long)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(double)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:563:19)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:32)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.2' (./headers1/weights.h:4856:40)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:8)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4859:18)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4860:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4861:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4862:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4863:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4864:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4865:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4866:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4867:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(double)' into '__cxx_global_var_init.3' (./headers1/weights.h:4868:16)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 32, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:541:146)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base(int)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:183:59)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::read(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:125:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<64, 16, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1119:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<65, 17, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<64, 16, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:248)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<65, 17, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1212:246)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:330)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<33, 9, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:382)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:1192:342)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator!() const' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:698:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator=<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed_base.h:431:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot\ap_fixed.h:75:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:13)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:32)
+INFO: [HLS 214-131] Inlining function 'bool ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator><32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' (./headers1/activations.h:34:11)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::write(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:129:9)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed(int)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:15:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator<<(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:7)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:18:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<33, 9, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::plus ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:32:25)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>& ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator+=<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:12)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:27:28)
+INFO: [HLS 214-131] Inlining function 'hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>::operator>>(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:24:5)
+INFO: [HLS 214-131] Inlining function 'ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>::ap_fixed<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<64, 16, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:15)
+INFO: [HLS 214-131] Inlining function 'ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::RType<32, 8, true>::mult ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>::operator*<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0>(ap_fixed_base<32, 8, true, (ap_q_mode)5, (ap_o_mode)3, 0> const&) const' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:20:28)
+INFO: [HLS 214-186] Unrolling loop 'fc_layer2_label42' (fully2_cnn.cpp:25:22) in function 'fc_layer2' completely with a factor of 2 (fully2_cnn.cpp:25:22)
+INFO: [HLS 214-178] Inlining function 'relu(ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>)' into 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' (fully2_cnn.cpp:13:0)
+INFO: [HLS 214-178] Inlining function 'fc_layer2(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0> (*) [2], ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>*)' into 'fully2_cnn(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (fully2_cnn.cpp:39:0)
+INFO: [HLS 214-131] Inlining function '_llvm.fpga.pack.none.i32.s_struct.ap_fixeds' into 'fully2_cnn(hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&, hls::stream<ap_fixed<32, 8, (ap_q_mode)5, (ap_o_mode)3, 0>, 0>&)' (C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_stream_39.h:174:9)
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 6.823 seconds; current allocated memory: 195.268 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.097 seconds; current allocated memory: 195.269 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.336 seconds; current allocated memory: 205.223 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.304 seconds; current allocated memory: 220.302 MB.
+INFO: [XFORM 203-510] Pipelining loop 'VITIS_LOOP_19_1' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-510] Pipelining loop 'fc_layer2_label2' (fully2_cnn.cpp:16) in function 'fully2_cnn' automatically.
+INFO: [XFORM 203-102] Automatically partitioning small array 'fc_layer2_bias.V' completely based on array size.
+INFO: [XFORM 203-101] Partitioning array 'fc_layer2_bias.V' in dimension 1 completely.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.388 seconds; current allocated memory: 255.246 MB.
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' (fully2_cnn.cpp:20:13)
+INFO: [HLS 200-472] Inferring partial write operation for 'output.V' 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.292 seconds; current allocated memory: 256.876 MB.
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'fully2_cnn' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'VITIS_LOOP_19_1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 2, loop 'VITIS_LOOP_19_1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label1'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 64, Final II = 3, Depth = 3, loop 'fc_layer2_label1'
+INFO: [SCHED 204-61] Pipelining loop 'fc_layer2_label2'.
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 3, loop 'fc_layer2_label2'
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.332 seconds; current allocated memory: 257.189 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.274 seconds; current allocated memory: 257.509 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'fully2_cnn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low.
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/in_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'fully2_cnn/out_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on function 'fully2_cnn' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Generating core module 'mul_25s_32s_56_1_1': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'fully2_cnn'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.319 seconds; current allocated memory: 258.233 MB.
+INFO: [RTMG 210-282] Generating pipelined core: 'fully2_cnn_mul_25s_32s_56_1_1_Multiplier_0'
+INFO: [RTMG 210-279] Implementing memory 'fully2_cnn_fc_layer2_weights_V_rom' using auto ROMs.
+INFO: [RTMG 210-278] Implementing memory 'fully2_cnn_output_V_ram (RAM)' using auto RAMs.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 1 seconds. Elapsed time: 1.986 seconds; current allocated memory: 265.081 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for fully2_cnn.
+INFO: [VLOG 209-307] Generating Verilog RTL for fully2_cnn.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 187.48 MHz
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 6 seconds. CPU system time: 1 seconds. Elapsed time: 24.824 seconds; current allocated memory: 265.186 MB.
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 2 seconds. Total elapsed time: 28.233 seconds; peak allocated memory: 581.343 MB.
+==============================================================
+Vitis HLS - High-Level Synthesis from C, C++ and OpenCL v2020.2 (64-bit)
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+INFO: [HLS 200-1464] Running solution command: config_export -format=ip_catalog
+INFO: [HLS 200-1464] Running solution command: config_export -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-1464] Running solution command: config_export -rtl=vhdl
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: config_export -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip -rtl vhdl 
+INFO: [HLS 200-1510] Running: set_directive_top -name fully2_cnn fully2_cnn 
+INFO: [HLS 200-1510] Running: export_design -rtl vhdl -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/test_fix_point/fully2_cnn.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 16.155 seconds; current allocated memory: 198.716 MB.

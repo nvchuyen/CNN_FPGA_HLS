@@ -1,0 +1,10 @@
+<VitisHLS:BurstInfo>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:33:39" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb7.load.0" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:33:37" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb7.store.3" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:30:37" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb6.store.0" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:30:37" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb6.store.0" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:33:39" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb7.load.0" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="UnknownUnderlyingObjectMissed" src_info="pooling_layer2.cpp:33:37" msg_id="214-117" msg_severity="INFO" msg_body="Cannot find or modify the underlying object pointed by din" ID="bb7.store.3" VarName="pool_buff.i"/>
+    <burst group="BURST_VERBOSE_MISSED" fe_name="CouldNotAnalyzeBoundsPatternMissed" src_info="" msg_id="214-252" msg_severity="INFO" msg_body="Cannot analyze the loop bounds of 'anonymous'" resolution="214-252"/>
+</VitisHLS:BurstInfo>
+

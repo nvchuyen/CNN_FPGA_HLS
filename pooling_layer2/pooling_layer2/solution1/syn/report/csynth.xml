@@ -1,0 +1,404 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>pooling_layer2</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>6.961</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>2052</Best-caseLatency>
+            <Average-caseLatency>2052</Average-caseLatency>
+            <Worst-caseLatency>2052</Worst-caseLatency>
+            <Best-caseRealTimeLatency>20.520 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>20.520 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>20.520 us</Worst-caseRealTimeLatency>
+            <Interval-min>2053</Interval-min>
+            <Interval-max>2053</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                <TripCount>2048</TripCount>
+                <Latency>2050</Latency>
+                <AbsoluteTimeLatency>20500</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>4</PipelineDepth>
+            </pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <FF>8432</FF>
+            <LUT>1418</LUT>
+            <DSP>0</DSP>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>pooling_layer2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>pooling_layer2</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TDATA</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TVALID</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TREADY</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TDATA</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TVALID</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TREADY</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>pooling_layer2</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>pooling_layer2</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.961</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>2052</Best-caseLatency>
+                    <Average-caseLatency>2052</Average-caseLatency>
+                    <Worst-caseLatency>2052</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>20.520 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>20.520 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>20.520 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>2053</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                        <Name>pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4</Name>
+                        <TripCount>2048</TripCount>
+                        <Latency>2050</Latency>
+                        <AbsoluteTimeLatency>20.500 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                    </pool_layer1_label0_pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <FF>8432</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1418</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>pooling_layer2</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>pooling_layer2</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TDATA</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TVALID</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TREADY</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TDATA</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TVALID</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TREADY</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="out" index="0" direction="out" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="out_V" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="in" index="1" direction="in" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="in_V" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">out_V:in_V</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_V" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="in_V_">
+            <ports>
+                <port>in_V_TDATA</port>
+                <port>in_V_TREADY</port>
+                <port>in_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_V" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_V_">
+            <ports>
+                <port>out_V_TDATA</port>
+                <port>out_V_TREADY</port>
+                <port>out_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="in_V">both, 32, 1, 1</column>
+                    <column name="out_V">both, 32, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="out">out, stream&lt;float 0&gt;&amp;</column>
+                    <column name="in">in, stream&lt;float 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="out">out_V, interface</column>
+                    <column name="in">in_V, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

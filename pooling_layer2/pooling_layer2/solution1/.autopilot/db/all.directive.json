@@ -1,0 +1,15 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [{
+          "functionName": "pooling_layer2",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "pooling_layer2"
+              }]
+          }
+        }]
+    }]}

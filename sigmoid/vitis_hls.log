@@ -1,0 +1,49 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vitis_HLS/2020.2/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'CMC' on host 'desktop-qvhj8po' (Windows NT_amd64 version 6.2) on Thu Aug 05 16:19:50 +0700 2021
+INFO: [HLS 200-10] In directory 'F:/NVChuyen/CNN/VitisHLS/sigmoid'
+Sourcing Tcl script 'F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/export.tcl'
+INFO: [HLS 200-1510] Running: open_project sigmoid 
+INFO: [HLS 200-10] Opening project 'F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid'.
+INFO: [HLS 200-1510] Running: set_top sigmoid 
+INFO: [HLS 200-1510] Running: add_files sigmoid.cpp 
+INFO: [HLS 200-10] Adding design file 'sigmoid.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2020.2;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+create_project: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1143.336 ; gain = 0.000
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'sigmoid_ap_fadd_2_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sigmoid_ap_fadd_2_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sigmoid_ap_fadd_2_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'sigmoid_ap_fdiv_7_no_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sigmoid_ap_fdiv_7_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sigmoid_ap_fdiv_7_no_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'sigmoid_ap_fexp_6_full_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sigmoid_ap_fexp_6_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sigmoid_ap_fexp_6_full_dsp_32'...
+WARNING: [IP_Flow 19-4832] The IP name 'sigmoid_ap_fmul_1_max_dsp_32' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'sigmoid_ap_fmul_1_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'sigmoid_ap_fmul_1_max_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug  5 16:20:22 2021...
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 31.496 seconds; current allocated memory: 198.908 MB.

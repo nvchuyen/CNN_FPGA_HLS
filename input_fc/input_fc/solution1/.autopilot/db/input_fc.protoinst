@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"input_fc": {
+			"proto_instances": {
+			}
+		}
+	}
+}

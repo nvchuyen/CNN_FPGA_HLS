@@ -1,0 +1,7 @@
+conv_layer1_fadd_32ns_32ns_32_4_full_dsp_1
+conv_layer1_fmul_32ns_32ns_32_3_max_dsp_1
+conv_layer1_fcmp_32ns_32ns_1_2_no_dsp_1
+conv_layer1_regslice_both
+conv_layer1_regslice_both
+convolution
+conv_layer1

@@ -1,0 +1,1530 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>cnn</TopModelName>
+        <TargetClockPeriod>20.00</TargetClockPeriod>
+        <ClockUncertainty>5.40</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>14.344</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>42799</Best-caseLatency>
+            <Average-caseLatency>47799</Average-caseLatency>
+            <Worst-caseLatency>52799</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.856 ms</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.956 ms</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>1.056 ms</Worst-caseRealTimeLatency>
+            <Interval-min>42800</Interval-min>
+            <Interval-max>52800</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <pool_layer1_label0_pool_layer1_label1>
+                <TripCount>28</TripCount>
+                <Latency>6664</Latency>
+                <AbsoluteTimeLatency>133280</AbsoluteTimeLatency>
+                <IterationLatency>238</IterationLatency>
+                <pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                    <TripCount>224</TripCount>
+                    <Latency>225</Latency>
+                    <AbsoluteTimeLatency>4500</AbsoluteTimeLatency>
+                    <PipelineII>1</PipelineII>
+                    <PipelineDepth>3</PipelineDepth>
+                </pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                <pool_layer1_label6>
+                    <TripCount>8</TripCount>
+                    <Latency>8</Latency>
+                    <AbsoluteTimeLatency>160</AbsoluteTimeLatency>
+                    <PipelineII>1</PipelineII>
+                    <PipelineDepth>2</PipelineDepth>
+                </pool_layer1_label6>
+            </pool_layer1_label0_pool_layer1_label1>
+            <pool_layer1_label8_pool_layer1_label9>
+                <TripCount>232</TripCount>
+                <Latency>232</Latency>
+                <AbsoluteTimeLatency>4640</AbsoluteTimeLatency>
+                <PipelineII>1</PipelineII>
+                <PipelineDepth>2</PipelineDepth>
+            </pool_layer1_label8_pool_layer1_label9>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>40</BRAM_18K>
+            <DSP>22</DSP>
+            <FF>32550</FF>
+            <LUT>19022</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>cnn</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>cnn</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_V_TDATA</name>
+            <Object>in_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_V_TVALID</name>
+            <Object>in_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_stream_V_TREADY</name>
+            <Object>in_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_V_TDATA</name>
+            <Object>out_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_V_TVALID</name>
+            <Object>out_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_stream_V_TREADY</name>
+            <Object>out_stream_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>cnn</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_conv_layer1_fu_3516</InstName>
+                    <ModuleName>conv_layer1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>3516</ID>
+                </Instance>
+                <Instance>
+                    <InstName>grp_fc_layer1_fu_3523</InstName>
+                    <ModuleName>fc_layer1</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>3523</ID>
+                </Instance>
+            </InstancesList>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>conv_layer1</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>14.265</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>27232</Best-caseLatency>
+                    <Average-caseLatency>32232</Average-caseLatency>
+                    <Worst-caseLatency>37232</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.545 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.645 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.745 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>27232 ~ 37232</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_51_1>
+                        <Name>VITIS_LOOP_51_1</Name>
+                        <TripCount>100</TripCount>
+                        <Latency>100</Latency>
+                        <AbsoluteTimeLatency>2.000 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                    </VITIS_LOOP_51_1>
+                    <conv_init_buffer>
+                        <Name>conv_init_buffer</Name>
+                        <TripCount>100</TripCount>
+                        <Latency>200 ~ 10200</Latency>
+                        <AbsoluteTimeLatency>4.000 us ~ 0.204 ms</AbsoluteTimeLatency>
+                        <IterationLatency>
+                            <range>
+                                <min>2</min>
+                                <max>102</max>
+                            </range>
+                        </IterationLatency>
+                        <PipelineDepth>2 ~ 102</PipelineDepth>
+                        <VITIS_LOOP_76_1>
+                            <Name>VITIS_LOOP_76_1</Name>
+                            <TripCount>99</TripCount>
+                            <Latency>99</Latency>
+                            <AbsoluteTimeLatency>1.980 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>2</PipelineDepth>
+                        </VITIS_LOOP_76_1>
+                    </conv_init_buffer>
+                    <conv_layer1_label_stride_conv_layer1_label9>
+                        <Name>conv_layer1_label_stride_conv_layer1_label9</Name>
+                        <TripCount>841</TripCount>
+                        <Latency>26927</Latency>
+                        <AbsoluteTimeLatency>0.539 ms</AbsoluteTimeLatency>
+                        <PipelineII>32</PipelineII>
+                        <PipelineDepth>45</PipelineDepth>
+                    </conv_layer1_label_stride_conv_layer1_label9>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>20193</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>4</UTIL_FF>
+                    <LUT>14029</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>6</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_opcode</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_opcode</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5488_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5488_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5488_p_opcode</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5488_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5488_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5492_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5492_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5492_p_opcode</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5492_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5492_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5496_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5496_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5496_p_opcode</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5496_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5496_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5508_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5508_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5508_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5508_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5512_p_din0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5512_p_din1</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5512_p_dout0</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5512_p_ce</name>
+                    <Object>conv_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TDATA</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TVALID</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TREADY</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_r_din</name>
+                    <Object>out_r</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_r_full_n</name>
+                    <Object>out_r</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_r_write</name>
+                    <Object>out_r</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>fc_layer1</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>13.674</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>8664</Best-caseLatency>
+                    <Average-caseLatency>8664</Average-caseLatency>
+                    <Worst-caseLatency>8664</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.173 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.173 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.173 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>8664</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <Loop1>
+                        <Name>Loop 1</Name>
+                        <TripCount>10</TripCount>
+                        <Latency>10</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                    </Loop1>
+                    <VITIS_LOOP_19_1>
+                        <Name>VITIS_LOOP_19_1</Name>
+                        <TripCount>10</TripCount>
+                        <Latency>10</Latency>
+                        <AbsoluteTimeLatency>0.200 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                    </VITIS_LOOP_19_1>
+                    <fc_layer1_label0>
+                        <Name>fc_layer1_label0</Name>
+                        <TripCount>196</TripCount>
+                        <Latency>8624</Latency>
+                        <AbsoluteTimeLatency>0.172 ms</AbsoluteTimeLatency>
+                        <PipelineII>44</PipelineII>
+                        <PipelineDepth>44</PipelineDepth>
+                    </fc_layer1_label0>
+                    <fc_layer1_label3>
+                        <Name>fc_layer1_label3</Name>
+                        <TripCount>10</TripCount>
+                        <Latency>12</Latency>
+                        <AbsoluteTimeLatency>0.240 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>4</PipelineDepth>
+                    </fc_layer1_label3>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>40</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>6</UTIL_BRAM>
+                    <FF>3469</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>1862</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_start</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_done</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_idle</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_ready</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_din0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_din1</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_opcode</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_dout0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5480_p_ce</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_din0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_din1</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_opcode</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>2</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_dout0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5484_p_ce</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_din0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_din1</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_dout0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5500_p_ce</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_din0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_din1</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_dout0</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>grp_fu_5504_p_ce</name>
+                    <Object>fc_layer1</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_hs</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>pool1_out5_dout</name>
+                    <Object>pool1_out5</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>pool1_out5_empty_n</name>
+                    <Object>pool1_out5</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>pool1_out5_read</name>
+                    <Object>pool1_out5</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_fifo</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TDATA</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TVALID</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TREADY</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+        <Module>
+            <Name>cnn</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>20.00</TargetClockPeriod>
+                    <ClockUncertainty>5.40</ClockUncertainty>
+                    <EstimatedClockPeriod>14.344</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>42799</Best-caseLatency>
+                    <Average-caseLatency>47799</Average-caseLatency>
+                    <Worst-caseLatency>52799</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.856 ms</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.956 ms</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.056 ms</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>42800 ~ 52800</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <pool_layer1_label0_pool_layer1_label1>
+                        <Name>pool_layer1_label0_pool_layer1_label1</Name>
+                        <TripCount>28</TripCount>
+                        <Latency>6664</Latency>
+                        <AbsoluteTimeLatency>0.133 ms</AbsoluteTimeLatency>
+                        <IterationLatency>238</IterationLatency>
+                        <PipelineDepth>238</PipelineDepth>
+                        <pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                            <Name>pool_layer1_label2_pool_layer1_label3_pool_layer1_label4</Name>
+                            <TripCount>224</TripCount>
+                            <Latency>225</Latency>
+                            <AbsoluteTimeLatency>4.500 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>3</PipelineDepth>
+                        </pool_layer1_label2_pool_layer1_label3_pool_layer1_label4>
+                        <pool_layer1_label6>
+                            <Name>pool_layer1_label6</Name>
+                            <TripCount>8</TripCount>
+                            <Latency>8</Latency>
+                            <AbsoluteTimeLatency>0.160 us</AbsoluteTimeLatency>
+                            <PipelineII>1</PipelineII>
+                            <PipelineDepth>2</PipelineDepth>
+                        </pool_layer1_label6>
+                    </pool_layer1_label0_pool_layer1_label1>
+                    <pool_layer1_label8_pool_layer1_label9>
+                        <Name>pool_layer1_label8_pool_layer1_label9</Name>
+                        <TripCount>232</TripCount>
+                        <Latency>232</Latency>
+                        <AbsoluteTimeLatency>4.640 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                    </pool_layer1_label8_pool_layer1_label9>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>40</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>6</UTIL_BRAM>
+                    <DSP>22</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>32550</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>7</UTIL_FF>
+                    <LUT>19022</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>8</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>cnn</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>cnn</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TDATA</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TVALID</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_stream_V_TREADY</name>
+                    <Object>in_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TDATA</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TVALID</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_stream_V_TREADY</name>
+                    <Object>out_stream_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="in_stream" index="0" direction="in" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="in_stream_V" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out_stream" index="1" direction="out" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="out_stream_V" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">in_stream_V:out_stream_V</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_stream_V" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="in_stream_V_">
+            <ports>
+                <port>in_stream_V_TDATA</port>
+                <port>in_stream_V_TREADY</port>
+                <port>in_stream_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in_stream"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_stream_V" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_stream_V_">
+            <ports>
+                <port>out_stream_V_TDATA</port>
+                <port>out_stream_V_TREADY</port>
+                <port>out_stream_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out_stream"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="in_stream_V">both, 32, 1, 1</column>
+                    <column name="out_stream_V">both, 32, 1, 1</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in_stream">in, stream&lt;float 0&gt;&amp;</column>
+                    <column name="out_stream">out, stream&lt;float 0&gt;&amp;</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="in_stream">in_stream_V, interface</column>
+                    <column name="out_stream">out_stream_V, interface</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

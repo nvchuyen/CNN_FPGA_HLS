@@ -1,0 +1,20 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+0    2.639948
+1    2.127039
+2    0.000000
+3    0.000000
+4    2.275174
+5    4.220767
+6    0.000000
+7    2.279960
+8    0.000000
+9    0.000000
+
+ 
+DONE: 0 are values error,  10 are correct
+
+The maximum depth reached by any of the 2 hls::stream() instances in the design is 1568
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

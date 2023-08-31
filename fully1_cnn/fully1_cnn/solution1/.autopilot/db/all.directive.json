@@ -1,0 +1,29 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "fully1_cnn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fully1_cnn"
+              }]
+          }
+        },
+        {
+          "functionName": "fully1_cnn",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "fully1_cnn"
+              }]
+          }
+        }
+      ]
+    }]}

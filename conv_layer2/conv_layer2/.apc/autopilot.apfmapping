@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="conv_layer2.cpp" path="E:\CMC\CNN\VitisHLS\conv_layer2\conv_layer2.cpp"/>
+    <originFiles name="Convolution.h" path="E:\CMC\CNN\VitisHLS\conv_layer2\Convolution.h"/>
+  </source>
+  <testbench>
+    <originFiles name="conv_layer2_test.cpp" path="E:\CMC\CNN\VitisHLS\conv_layer2\conv_layer2_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="fully_layer.cpp" path="E:\CMC\CNN\VitisHLS\fully_connected\fully_layer.cpp"/>
+    <originFiles name="defines.h" path="E:\CMC\CNN\VitisHLS\fully_connected\headers1\defines.h"/>
+  </source>
+  <testbench>
+    <originFiles name="fully_layer_test.cpp" path="E:\CMC\CNN\VitisHLS\fully_connected\fully_layer_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

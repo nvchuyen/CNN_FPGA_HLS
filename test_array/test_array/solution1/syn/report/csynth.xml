@@ -1,0 +1,561 @@
+<profile>
+    <ReportVersion>
+        <Version>2020.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynquplus</ProductFamily>
+        <Part>xczu7ev-ffvc1156-2-e</Part>
+        <TopModelName>test_array</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>none</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.272</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>619</Best-caseLatency>
+            <Average-caseLatency>619</Average-caseLatency>
+            <Worst-caseLatency>619</Worst-caseLatency>
+            <Best-caseRealTimeLatency>6.190 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>6.190 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>6.190 us</Worst-caseRealTimeLatency>
+            <Interval-min>620</Interval-min>
+            <Interval-max>620</Interval-max>
+        </SummaryOfOverallLatency>
+        <SummaryOfLoopLatency>
+            <conv_init_buffer>
+                <TripCount>100</TripCount>
+                <Latency>100</Latency>
+                <AbsoluteTimeLatency>1000</AbsoluteTimeLatency>
+                <IterationLatency>1</IterationLatency>
+            </conv_init_buffer>
+            <conv_layer1_label2>
+                <TripCount>8</TripCount>
+                <Latency>516</Latency>
+                <AbsoluteTimeLatency>5160</AbsoluteTimeLatency>
+                <PipelineII>63</PipelineII>
+                <PipelineDepth>76</PipelineDepth>
+            </conv_layer1_label2>
+        </SummaryOfLoopLatency>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>0</BRAM_18K>
+            <DSP>5</DSP>
+            <FF>2072</FF>
+            <LUT>2183</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>624</BRAM_18K>
+            <DSP>1728</DSP>
+            <FF>460800</FF>
+            <LUT>230400</LUT>
+            <URAM>96</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>test_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>test_array</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_none</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TDATA</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TVALID</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>in_V_TREADY</name>
+            <Object>in_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TDATA</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TVALID</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>out_V_TREADY</name>
+            <Object>out_V</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>axis</IOProtocol>
+            <IOConfig>register, both mode</IOConfig>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>test_val2</name>
+            <Object>test_val2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>test_val2_ap_vld</name>
+            <Object>test_val2</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>test_bias</name>
+            <Object>test_bias</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>data</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+        <RtlPorts>
+            <name>test_bias_ap_vld</name>
+            <Object>test_bias</Object>
+            <Type>pointer</Type>
+            <Scope/>
+            <IOProtocol>ap_vld</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+            <CType>int</CType>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule>
+            <ModuleName>test_array</ModuleName>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>test_array</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.272</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>619</Best-caseLatency>
+                    <Average-caseLatency>619</Average-caseLatency>
+                    <Worst-caseLatency>619</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>6.190 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>6.190 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>6.190 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>620</PipelineInitiationInterval>
+                    <PipelineType>none</PipelineType>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <conv_init_buffer>
+                        <Name>conv_init_buffer</Name>
+                        <TripCount>100</TripCount>
+                        <Latency>100</Latency>
+                        <AbsoluteTimeLatency>1.000 us</AbsoluteTimeLatency>
+                        <IterationLatency>1</IterationLatency>
+                        <PipelineDepth>1</PipelineDepth>
+                    </conv_init_buffer>
+                    <conv_layer1_label2>
+                        <Name>conv_layer1_label2</Name>
+                        <TripCount>8</TripCount>
+                        <Latency>516</Latency>
+                        <AbsoluteTimeLatency>5.160 us</AbsoluteTimeLatency>
+                        <PipelineII>63</PipelineII>
+                        <PipelineDepth>76</PipelineDepth>
+                    </conv_layer1_label2>
+                </SummaryOfLoopLatency>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>624</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>5</DSP>
+                    <AVAIL_DSP>1728</AVAIL_DSP>
+                    <UTIL_DSP>~0</UTIL_DSP>
+                    <FF>2072</FF>
+                    <AVAIL_FF>460800</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>2183</LUT>
+                    <AVAIL_LUT>230400</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>96</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <InterfaceSummary>
+                <RtlPorts>
+                    <name>ap_clk</name>
+                    <Object>test_array</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>ap_rst_n</name>
+                    <Object>test_array</Object>
+                    <Type>return value</Type>
+                    <Scope/>
+                    <IOProtocol>ap_ctrl_none</IOProtocol>
+                    <IOConfig/>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TDATA</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TVALID</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>in_V_TREADY</name>
+                    <Object>in_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TDATA</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TVALID</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>out_V_TREADY</name>
+                    <Object>out_V</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>axis</IOProtocol>
+                    <IOConfig>register, both mode</IOConfig>
+                    <Dir>in</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>test_val2</name>
+                    <Object>test_val2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>test_val2_ap_vld</name>
+                    <Object>test_val2</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>test_bias</name>
+                    <Object>test_bias</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>32</Bits>
+                    <Attribute>data</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+                <RtlPorts>
+                    <name>test_bias_ap_vld</name>
+                    <Object>test_bias</Object>
+                    <Type>pointer</Type>
+                    <Scope/>
+                    <IOProtocol>ap_vld</IOProtocol>
+                    <IOConfig/>
+                    <Dir>out</Dir>
+                    <Bits>1</Bits>
+                    <Attribute>control</Attribute>
+                    <CType>int</CType>
+                </RtlPorts>
+            </InterfaceSummary>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <Args>
+        <Arg ArgName="in" index="0" direction="in" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="in_V" name="" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="out" index="1" direction="out" srcType="stream&lt;float, 0&gt;&amp;" srcSize="32">
+            <hwRefs>
+                <hwRef type="interface" interface="out_V" name="" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="test_val2" index="2" direction="out" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="test_val2" name="test_val2" usage="data" direction="out"/>
+                <hwRef type="port" interface="test_val2_ap_vld" name="test_val2_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="test_bias" index="3" direction="out" srcType="float*" srcSize="32">
+            <hwRefs>
+                <hwRef type="port" interface="test_bias" name="test_bias" usage="data" direction="out"/>
+                <hwRef type="port" interface="test_bias_ap_vld" name="test_bias_ap_vld" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">in_V:out_V</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="in_V" type="axi4stream" busTypeName="axis" mode="slave" dataWidth="32" portPrefix="in_V_">
+            <ports>
+                <port>in_V_TDATA</port>
+                <port>in_V_TREADY</port>
+                <port>in_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="in"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="out_V" type="axi4stream" busTypeName="axis" mode="master" dataWidth="32" portPrefix="out_V_">
+            <ports>
+                <port>out_V_TDATA</port>
+                <port>out_V_TREADY</port>
+                <port>out_V_TVALID</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="axis" register_option="0" register_mode="both" argName="out"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="test_bias" type="data" busTypeName="data" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="test_bias">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>test_bias</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="test_bias"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="test_val2" type="data" busTypeName="data" mode="master" dataWidth="32">
+            <portMaps>
+                <portMap portMapName="test_val2">DATA</portMap>
+            </portMaps>
+            <ports>
+                <port>test_val2</port>
+            </ports>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="ap_none" register_option="0" argName="test_val2"/>
+            </constraints>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="AXIS">
+                <table>
+                    <keys size="5">Interface, Register Mode, TDATA, TREADY, TVALID</keys>
+                    <column name="in_V">both, 32, 1, 1</column>
+                    <column name="out_V">both, 32, 1, 1</column>
+                </table>
+            </item>
+            <item name="REGISTER">
+                <table>
+                    <keys size="3">Interface, Mode, Bitwidth</keys>
+                    <column name="test_bias">ap_none, 32</column>
+                    <column name="test_val2">ap_none, 32</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="ap_ctrl">ap_ctrl_none</column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="in">in, stream&lt;float 0&gt;&amp;</column>
+                    <column name="out">out, stream&lt;float 0&gt;&amp;</column>
+                    <column name="test_val2">out, float*</column>
+                    <column name="test_bias">out, float*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table isCollapsed="1">
+                    <keys size="3">Argument, HW Name, HW Type</keys>
+                    <column name="in">in_V, interface</column>
+                    <column name="out">out_V, interface</column>
+                    <column name="test_val2">test_val2, port</column>
+                    <column name="test_val2">test_val2_ap_vld, port</column>
+                    <column name="test_bias">test_bias, port</column>
+                    <column name="test_bias">test_bias_ap_vld, port</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ReportBurst>
+        <section name="M_AXI Burst Information" level="0"/>
+    </ReportBurst>
+</profile>
+

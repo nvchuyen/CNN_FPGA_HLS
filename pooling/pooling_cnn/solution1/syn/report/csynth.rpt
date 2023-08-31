@@ -1,0 +1,29 @@
+
+
+================================================================
+== Synthesis Summary Report of 'pooling_cnn'
+================================================================
++ General Information: 
+    * Date:           Tue Jul 20 14:40:11 2021
+    * Version:        2020.2 (Build 3064766 on Wed Nov 18 09:12:45 MST 2020)
+    * Project:        pooling_cnn
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu7ev-ffvc1156-2-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |                            Modules                            | Issue|       | Latency |  Latency  | Iteration|         | Trip |          |      |    |           |            |     |
+    |                            & Loops                            | Type | Slack | (cycles)|    (ns)   |  Latency | Interval| Count| Pipelined| BRAM | DSP|     FF    |     LUT    | URAM|
+    +---------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+------------+-----+
+    |+ pooling_cnn                                                  |     -|  -3.16|     6874|  6.874e+04|         -|     6875|     -|        no|     -|   -|  7281 (1%)|  1234 (~0%)|    -|
+    | + grp_pool_layer1_fu_26                                       |     -|  -3.16|     6871|  6.871e+04|         -|     6871|     -|        no|     -|   -|  7276 (1%)|  1197 (~0%)|    -|
+    |  o pool_layer1_label0_pool_layer1_label1                      |     -|  -7.30|     6636|  6.636e+04|       237|        -|    28|        no|     -|   -|          -|           -|    -|
+    |   o pool_layer1_label2_pool_layer1_label3_pool_layer1_label4  |     -|  -7.30|      224|  2.240e+03|         2|        1|   224|       yes|     -|   -|          -|           -|    -|
+    |   o pool_layer1_label6                                        |     -|  -7.30|        8|     80.000|         1|        1|     8|       yes|     -|   -|          -|           -|    -|
+    |  o pool_layer1_label8_pool_layer1_label9                      |     -|  -7.30|      232|  2.320e+03|         1|        1|   232|       yes|     -|   -|          -|           -|    -|
+    +---------------------------------------------------------------+------+-------+---------+-----------+----------+---------+------+----------+------+----+-----------+------------+-----+
+

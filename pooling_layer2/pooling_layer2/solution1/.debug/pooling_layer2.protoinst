@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"pooling_layer2": {
+			"proto_instances": {
+			}
+		}
+	}
+}

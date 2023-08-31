@@ -1,0 +1,1042 @@
+INFO-FLOW: Workspace F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1 opened at Thu Aug 05 15:53:34 +0700 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.232 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.113 sec.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 3.698 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_library_info -library zynquplus_medium 
+Execute         config_library_info -family zynquplus 
+Execute         config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Command         import_lib done; 0.421 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.135 sec.
+Command       add_library done; 0.681 sec.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 4.458 sec.
+Execute     ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 4.95 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_library_info -library zynquplus_medium 
+Execute       config_library_info -family zynquplus 
+Execute       config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.113 sec.
+Command     add_library done; 0.204 sec.
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.268 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   csynth_design 
+INFO: [HLS 200-1510] Running: csynth_design 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.11 seconds; current allocated memory: 191.411 MB.
+INFO: [HLS 200-10] Analyzing design file 'sigmoid.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       get_config_compile -pragma_strict_mode 
+INFO-FLOW: Handling sigmoid.cpp as C++
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: Running: GCC PP 39
+INFO-FLOW: Source preprocessing
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang sigmoid.cpp -foptimization-record-file=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info --sysroot C:/Xilinx/Vitis_HLS/2020.2/tps/mingw/6.2.0/win64.o/nt -fhls -fno-exceptions -E -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-mingw32 -fno-threadsafe-statics -fno-use-cxa-atexit -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/39 -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.cpp.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.cpp.err.log 
+Command       ap_eval done; 1.439 sec.
+WARNING: [HLS 207-910] 'FLOAT_IDTH' macro redefined: ./headers1/buffer.h:26:9
+INFO: [HLS 207-71] previous definition is here: ./headers1/defines.h:25:9
+WARNING: [HLS 207-910] 'INT_WIDTH' macro redefined: ./headers1/buffer.h:27:9
+INFO: [HLS 207-71] previous definition is here: ./headers1/defines.h:26:9
+INFO-FLOW: Done: GCC PP 39 time: 1.5 seconds per iteration
+Execute       set_directive_top sigmoid -name=sigmoid 
+INFO-FLOW: Setting directive 'TOP' name=sigmoid 
+INFO-FLOW: Setting directive 'TOP' name=sigmoid 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/try/try.tcl 
+INFO-FLOW: Setting directive 'TOP' name=sigmoid 
+Execute       list_core -type functional_unit 
+Execute       clang_tidy xilinx-systemc-detector F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp std=gnu++14 -target fpga  -directive=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/.systemc_flag -fix-errors F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 3.74 sec.
+INFO-FLOW: Running: clang-tidy CDT preprocess 39
+Execute       clang_tidy xilinx-directive2pragma F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp std=gnu++14 -target fpga  -directive=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/all.directive.json -fix-errors F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 3.945 sec.
+Execute       clang_tidy xilinx-constantarray-param,xilinx-remove-assert F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp std=gnu++14 -target fpga  
+INFO-FLOW: exec C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-constantarray-param,xilinx-remove-assert -fix-errors F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0
+Command       clang_tidy done; 4.154 sec.
+INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 8.1 seconds per iteration
+INFO-FLOW: Calling xilinx-label-all-loops ... 
+Execute       clang_tidy -errorcheck xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp std=gnu++14 -target fpga  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang-tidy.sigmoid.pp.0.cpp.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-top-parameters,xilinx-array-stream-check,xilinx-warn-mayneed-no-ctor-attribute -fix-errors F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang-tidy.sigmoid.pp.0.cpp.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang-tidy.sigmoid.pp.0.cpp.err.log 
+Command         ap_eval done; 6.53 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+Command       clang_tidy done; 6.985 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/xilinx-dataflow-lawyer.sigmoid.pp.0.cpp.diag.yml F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -- -std=gnu++14 -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/xilinx-dataflow-lawyer.sigmoid.pp.0.cpp.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/xilinx-dataflow-lawyer.sigmoid.pp.0.cpp.err.log 
+Command       ap_eval done; 3.969 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+INFO-FLOW: compiling source code to llvm bc
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.pp.0.cpp.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -fno-threadsafe-statics -fno-use-cxa-atexit -std=gnu++14 -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot -I C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.pp.0.cpp.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.sigmoid.pp.0.cpp.err.log 
+Command       ap_eval done; 3.874 sec.
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:117:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:118:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:119:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:120:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:121:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:151:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:152:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:153:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:154:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:155:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:156:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:157:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:158:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:159:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:160:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:210:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:211:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:212:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:239:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:240:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:241:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:242:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:243:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:244:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:280:9
+WARNING: [HLS 207-5510] 'Resource pragma' is deprecated, and it will be removed in future release. It is suggested to replace it with 'bind_op/bind_storage pragma'.: C:/Xilinx/Vitis_HLS/2020.2/common/technology/autopilot/hls_hotbm_apfixed.h:281:9
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 28.574 seconds; current allocated memory: 194.179 MB.
+INFO-FLOW: Linking Debug ...
+INFO-FLOW: Linking dut bc code.
+Execute       run_link_or_opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.0.bc -args  "F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.g.bc"  
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.g.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.0.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.0.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.1.lower.bc -args F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.diag.yml F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.0.bc -reflow-lower-math-intrinsics -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.1.lower.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.1.lower.bc.err.log 
+Command         ap_eval done; 0.252 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.254 sec.
+INFO-FLOW: Linking math bc lib
+Execute       run_link_or_opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.2.m1.bc -args F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsm_39.bc C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libhlsmc++_39.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.2.m1.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.2.m1.bc.err.log 
+Command         ap_eval done; 2.825 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 2.827 sec.
+Execute       run_link_or_opt -opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.3.fpc.bc -args F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=sigmoid -reflow-float-conversion 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.diag.yml F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=sigmoid -reflow-float-conversion -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.3.fpc.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.3.fpc.bc.err.log 
+Command         ap_eval done; 0.996 sec.
+INFO-FLOW: 
+Command       run_link_or_opt done; 0.998 sec.
+Execute       run_link_or_opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.4.m2.bc -args F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/llvm-link F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/Vitis_HLS/2020.2/win64/lib/libfloatconversion_39.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.4.m2.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/llvm-link.a.g.ld.4.m2.bc.err.log 
+INFO-FLOW: 
+Execute       run_link_or_opt -opt -out F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.5.gdce.bc -args F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=sigmoid 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.diag.yml F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.5.gdce.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/opt.a.g.ld.5.gdce.bc.err.log 
+INFO-FLOW: 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_interface -default_slave_interface 
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_interface -m_axi_offset 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_latency 
+Execute       get_config_interface -m_axi_min_bitwidth 
+Execute       get_config_interface -m_axi_max_bitwidth 
+Execute       get_config_interface -m_axi_max_widen_bitwidth 
+Execute       get_config_interface -m_axi_auto_max_ports 
+Execute       get_config_interface -m_axi_num_read_outstanding 
+Execute       get_config_interface -m_axi_num_write_outstanding 
+Execute       get_config_interface -m_axi_max_read_burst_length 
+Execute       get_config_interface -m_axi_max_write_burst_length 
+Execute       get_config_interface -s_axilite_data64 
+Execute       get_config_interface -m_axi_alignment_byte_size 
+Execute       get_config_compile -pragma_strict_mode 
+Execute       get_config_compile -pipeline_style 
+Execute       send_msg_by_id INFO @200-777@%s Vivado 
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+Execute       is_m_axi_addr64 
+INFO-FLOW: Doing LTO.
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vitis_HLS/2020.2/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.a.g.ld.0.bc.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll -mllvm -pass-remarks=reflow|pasta|unroll|inline -fhls -mllvm -hls-top-function-name=sigmoid -mllvm -hls-db-dir -mllvm F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db -emit-llvm -c -target fpga64-xilinx-none -mllvm -xcl-xmlinfo=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/kernel.internal.xml -mllvm -top-io-mapping-info=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/top-io-fe.xml -mllvm -hls-bitcode-version=3.1 -mllvm -reflow-enable-slave-interface-default-setting=true -mllvm -gen-kernel-xml=false -mllvm -default-maxi-offset=off -mllvm -maxi-latency=0 -mllvm -hls-maxi-data-size-in-bits=8 -mllvm -hls-maxi-max-data-size-in-bits=1024 -mllvm -hls-max-widen-size-in-bits=0 -mllvm -xcl-kernel-max-mem-ports=0 -mllvm -maxi-read-trans=16 -mllvm -maxi-write-trans=16 -mllvm -maxi-read-burst-len=16 -mllvm -maxi-write-burst-len=16 -mllvm -reflow-enable-saxi-64bits=0 -mllvm -assume-maxi-align=0 -mllvm -no-unaligned-maxi-accesses -mllvm -reflow-pipeline-style-llvm-setting=0 -mllvm -disable-inlined-alloca-merging=true -x ir F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.ld.5.gdce.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.lto.bc > F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.a.g.ld.0.bc.out.log 2> F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/clang.a.g.ld.0.bc.err.log 
+Command       ap_eval done; 0.656 sec.
+INFO-FLOW: DBG:CMD: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/kernel.internal.xml
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 5.084 seconds; current allocated memory: 194.581 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.096 seconds; current allocated memory: 194.582 MB.
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top sigmoid -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.0.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.1.bc -f -phase std-opt 
+Command         transform done; 0.145 sec.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.258 seconds; current allocated memory: 195.481 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.1.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.2.prechk.bc -f 
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.2.prechk.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.2.bc -f -phase syn-check 
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.134 seconds; current allocated memory: 194.913 MB.
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.g.1.bc to F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db -interface-port-rename -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -function-uniquify -directive-preproc -mem2reg -dse -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -accesses-merge -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin2 -bitwidthmin2 -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -hls-dead-arg-elim -deadargelim -directive-preproc -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.1.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.1.tmp.bc -f 
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -barrier -norm-name F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.1.tmp.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.159 seconds; current allocated memory: 214.874 MB.
+Execute         get_config_compile -enable_loop_extract 
+Execute         get_config_compile -disable_auto_rewind 
+Execute         get_config_compile -enable_auto_rewind 
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin2 -bitwidthmin2 -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -float-op-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.2.bc -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.151 seconds; current allocated memory: 206.451 MB.
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 0.709 sec.
+Command     elaborate done; 34.567 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'sigmoid' ...
+Execute       ap_set_top_model sigmoid 
+Execute       get_model_list sigmoid -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model sigmoid 
+Execute       get_model_list sigmoid -filter all-wo-channel 
+INFO-FLOW: Model list for configure: sigmoid
+INFO-FLOW: Configuring Module : sigmoid ...
+Execute       set_default_model sigmoid 
+Execute       apply_spec_resource_limit sigmoid 
+INFO-FLOW: Model list for preprocess: sigmoid
+INFO-FLOW: Preprocessing Module: sigmoid ...
+Execute       set_default_model sigmoid 
+Execute       cdfg_preprocess -model sigmoid 
+Execute       rtl_gen_preprocess sigmoid 
+INFO-FLOW: Model list for synthesis: sigmoid
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'sigmoid' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model sigmoid 
+Execute       schedule -model sigmoid 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.124 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.262 seconds; current allocated memory: 206.678 MB.
+Execute       syn_report -verbosereport -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.verbose.sched.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Command       syn_report done; 0.102 sec.
+Execute       db_write -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.sched.adb -f 
+INFO-FLOW: Finish scheduling sigmoid.
+Execute       set_default_model sigmoid 
+Execute       bind -model sigmoid 
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.306 seconds; current allocated memory: 206.803 MB.
+Execute       syn_report -verbosereport -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.verbose.bind.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.bind.adb -f 
+INFO-FLOW: Finish binding sigmoid.
+Execute       get_model_list sigmoid -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess sigmoid 
+INFO-FLOW: Model list for RTL generation: sigmoid
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'sigmoid' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model sigmoid -top_prefix  -sub_prefix sigmoid_ -mg_file F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'sigmoid/a' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'sigmoid' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Generating core module 'fadd_32ns_32ns_32_4_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fdiv_32ns_32ns_32_9_no_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fexp_32ns_32ns_32_8_full_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'fmul_32ns_32ns_32_3_max_dsp_1': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'sigmoid'.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.269 seconds; current allocated memory: 207.202 MB.
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute       gen_rtl sigmoid -istop -style xilinx -f -lang vhdl -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/syn/vhdl/sigmoid 
+Execute       gen_rtl sigmoid -istop -style xilinx -f -lang vlog -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/syn/verilog/sigmoid 
+Execute       syn_report -csynth -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/syn/report/sigmoid_csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       syn_report -rtlxml -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/syn/report/sigmoid_csynth.xml 
+Execute         get_solution -flow_target
+Execute           get_solution -flow_target 
+Execute       syn_report -verbosereport -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.verbose.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       db_write -model sigmoid -f -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.adb 
+Execute       gen_tb_info sigmoid -p F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid 
+Execute       export_constraint_db -f -tool general -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+Execute       syn_report -designview -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.design.xml 
+Execute       syn_report -csynthDesign -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/syn/report/csynth.rpt 
+Execute         AP::get_flow_target_display_name
+Execute           get_solution -flow_target 
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model sigmoid -o F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks sigmoid 
+Execute       get_config_export -vivado_clock 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       sc_get_portdomain sigmoid 
+INFO-FLOW: Model list for RTL component generation: sigmoid
+INFO-FLOW: Handling components in module [sigmoid] ... 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+INFO-FLOW: Found component sigmoid_fadd_32ns_32ns_32_4_full_dsp_1.
+INFO-FLOW: Append model sigmoid_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: Found component sigmoid_fmul_32ns_32ns_32_3_max_dsp_1.
+INFO-FLOW: Append model sigmoid_fmul_32ns_32ns_32_3_max_dsp_1
+INFO-FLOW: Found component sigmoid_fdiv_32ns_32ns_32_9_no_dsp_1.
+INFO-FLOW: Append model sigmoid_fdiv_32ns_32ns_32_9_no_dsp_1
+INFO-FLOW: Found component sigmoid_fexp_32ns_32ns_32_8_full_dsp_1.
+INFO-FLOW: Append model sigmoid_fexp_32ns_32ns_32_8_full_dsp_1
+INFO-FLOW: Append model sigmoid
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: sigmoid_fadd_32ns_32ns_32_4_full_dsp_1 sigmoid_fmul_32ns_32ns_32_3_max_dsp_1 sigmoid_fdiv_32ns_32ns_32_9_no_dsp_1 sigmoid_fexp_32ns_32ns_32_8_full_dsp_1 sigmoid
+INFO-FLOW: To file: write model sigmoid_fadd_32ns_32ns_32_4_full_dsp_1
+INFO-FLOW: To file: write model sigmoid_fmul_32ns_32ns_32_3_max_dsp_1
+INFO-FLOW: To file: write model sigmoid_fdiv_32ns_32ns_32_9_no_dsp_1
+INFO-FLOW: To file: write model sigmoid_fexp_32ns_32ns_32_8_full_dsp_1
+INFO-FLOW: To file: write model sigmoid
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+Execute       get_top 
+Execute       get_config_export -ipname 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): sigmoid
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.121 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.114 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.293 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1
+Execute       get_solution -flow_target 
+Execute       get_config_export -xo 
+Execute       get_config_export -format 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.112 sec.
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.112 sec.
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=sigmoid xml_exists=0
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.178 sec.
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command       ap_source done; 0.241 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=2
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=5 #gSsdmPorts=6
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/top-io-be.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.dataonly.tcl 
+Execute       get_config_export -format 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       get_solution -flow_target 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+Execute       sc_get_clocks sigmoid 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/misc/sigmoid_ap_fadd_2_full_dsp_32_ip.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/misc/sigmoid_ap_fdiv_7_no_dsp_32_ip.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/misc/sigmoid_ap_fexp_6_full_dsp_32_ip.tcl 
+Execute       source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/misc/sigmoid_ap_fmul_1_max_dsp_32_ip.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 2.08 seconds; current allocated memory: 214.083 MB.
+INFO: [VHDL 208-304] Generating VHDL RTL for sigmoid.
+INFO: [VLOG 209-307] Generating Verilog RTL for sigmoid.
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report append design.xml content design_xml=F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.design.xml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report json2reportxml
+INFO-FLOW: DBG:CMD:       update_csynth_xml_report done
+Execute       syn_report -model sigmoid -printsummary 
+INFO: [HLS 200-789] **** Estimated Fmax: 141.70 MHz
+Command     autosyn done; 2.986 sec.
+Command   csynth_design done; 37.564 sec.
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 4 seconds. CPU system time: 0 seconds. Elapsed time: 37.664 seconds; current allocated memory: 214.181 MB.
+Command ap_source done; 42.921 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1 opened at Thu Aug 05 16:19:50 +0700 2021
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.134 sec.
+Execute     import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus_fpv7 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.114 sec.
+Execute     set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/Vitis_HLS/2020.2\lib\win64.o\librdi_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/Vivado/2020.2/data/parts/arch.xml
+Command       ap_part_info done; 1.663 sec.
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute         config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_chip_info -speed medium 
+Execute         ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute         config_library_info -library zynquplus_medium 
+Execute         config_library_info -family zynquplus 
+Execute         config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute         import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Command         import_lib done; 0.18 sec.
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command         ap_source done; 0.118 sec.
+Command       add_library done; 0.371 sec.
+INFO: [HLS 200-10] Setting target device to 'xczu7ev-ffvc1156-2-e'
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_compile -quiet -complex-mul-dsp=0 
+Command     set_part done; 2.101 sec.
+Execute     ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute     config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_chip_info -speed medium 
+Execute     send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute     get_config_interface -m_axi_latency 
+Execute     get_config_interface -m_axi_alignment_byte_size 
+Execute     get_config_interface -m_axi_max_widen_bitwidth 
+Execute     get_config_interface -default_interface 
+Execute     get_config_interface -m_axi_offset 
+Execute     get_config_rtl -register_reset_num 
+Command   open_solution done; 2.424 sec.
+Execute   set_part xczu7ev-ffvc1156-2-e 
+INFO: [HLS 200-1510] Running: set_part xczu7ev-ffvc1156-2-e 
+INFO-FLOW: DBG:set_part: XILINX_VIVADO=C:/Xilinx/Vivado/2020.2
+INFO-FLOW: DBG:set_part: RDI_DATADIR=C:/Xilinx/Vivado/2020.2/data;C:/Xilinx/Vitis_HLS/2020.2/data
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data single -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     add_library xilinx/zynquplus/zynquplus:xczu7ev:-ffvc1156:-2-e 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       ap_part_info -data single -name xczu7ev-ffvc1156-2-e 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data resources 
+Execute       config_chip_info -resource {SLICE 28800} {LUT 230400} {FF 460800} {DSP 1728} {BRAM 624} {URAM 96} 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_chip_info -speed medium 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute       config_library_info -library zynquplus_medium 
+Execute       config_library_info -family zynquplus 
+Execute       config_library_info -part xczu7ev:-ffvc1156:-2-e 
+Execute       import_lib C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/zynquplus/zynquplus 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.hlp 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/zynquplus_dsp48e2.hlp 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command       ap_source done; 0.116 sec.
+Command     add_library done; 0.219 sec.
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info 
+Execute     config_compile -quiet -complex-mul-dsp=0 
+Command   set_part done; 0.294 sec.
+Execute   create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+Execute     ap_set_clock -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute   export_design -rtl verilog -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip 
+INFO: [HLS 200-1510] Running: export_design -rtl verilog -format ip_catalog -output F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip 
+Execute     get_config_export -clock_margin 
+Execute     get_config_export -custom_script 
+Execute     get_config_export -description 
+Execute     get_config_export -display_name 
+Execute     get_config_export -driver_input_dir 
+Execute     get_config_export -ipname 
+Execute     get_config_export -library 
+Execute     get_config_export -qor_test 
+Execute     get_config_export -sim 
+Execute     get_config_export -taxonomy 
+Execute     get_config_export -use_ip 
+Execute     get_config_export -use_netlist 
+Execute     get_config_export -vendor 
+Execute     get_config_export -version 
+Execute     get_config_export -xo 
+Execute     config_export -format=ip_catalog -output=F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip -rtl=verilog 
+INFO-FLOW: DBG:CMD: export_design_wrap: -format ip_catalog -rtl verilog
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_export -vivado_clock 
+Execute     get_top 
+Execute     get_config_export -ipname 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     get_config_rtl -module_auto_prefix 
+INFO-FLOW: DBG:CMD:   auto_impl: set ipname to top (module_auto_prefix): sigmoid
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:   auto_impl: pack: -export -rtl verilog
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: automg_wrap -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+INFO-FLOW: DBG:CMD:     auto_generate -export -pcore_version 1.00.a -rtl vlog -tool Vivado -impltomg_flag
+Execute     get_solution -flow_target 
+Execute     get_config_export -xo 
+Execute     get_config_export -format 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.12 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.115 sec.
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=sigmoid xml_exists=1
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command     ap_source done; 0.569 sec.
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to sigmoid
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute       ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Command     ap_source done; 0.332 sec.
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.compgen.tcl 
+Execute     get_config_export -disable_deadlock_detection 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     get_config_rtl -module_prefix 
+INFO-FLOW: DBG:CMD:       cosim_export_main adding deadlock detection to sigmoid
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=6
+INFO-FLOW: DBG:CMD:       copying IP vlog from F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/verilog
+INFO-FLOW: DBG:CMD:       copying IP vhdl from F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/vhdl
+Execute     get_config_export -format 
+INFO-FLOW: DBG:CMD:       generate_ip_script #gSsdmPorts=6 g_lang=vlog is_sdaccel=false is_sdsoc=true xo_file=
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     get_config_debug -directory 
+INFO-FLOW: DBG:CMD:       generate_ip_auxiliary
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=sigmoid
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       generate_top_info
+INFO-FLOW: DBG:CMD:       prepArgInfo -> loadAnalyze_DB top_module=sigmoid
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.rtl_wrap.cfg.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+INFO-FLOW: DBG:CMD:       generate_ipi_example_script
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_syn_sh
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD:       generate_imp_constraints
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.constraint.tcl 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/sigmoid.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD: read_platform_lib F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/generic/autopilot/interface.gen 
+Execute     source F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.143 sec.
+Execute     source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/saxilite.gen 
+Execute         source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/maxi.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/Vitis_HLS/2020.2/common/technology/xilinx/DSP48/dsp48.gen 
+Command     ap_source done; 0.115 sec.
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data names -quiet 
+Execute     ap_part_info -name xczu7ev-ffvc1156-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:     exec F:/NVChuyen/CNN/VitisHLS/sigmoid/sigmoid/solution1/impl/ip/pack.bat
+Execute     get_config_export -output 
+Execute     send_msg_by_id INFO @200-802@%s F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip 
+INFO: [HLS 200-802] Generated output file F:/NVChuyen/CNN/Vivado/IpcoreTest/sigmoid/sigmoid.zip
+Command   export_design done; 30.929 sec.
+INFO: [HLS 200-111] Finished Command export_design CPU user time: 3 seconds. CPU system time: 2 seconds. Elapsed time: 31.496 seconds; current allocated memory: 198.908 MB.
+Command ap_source done; 34.242 sec.
+Execute cleanup_all 
